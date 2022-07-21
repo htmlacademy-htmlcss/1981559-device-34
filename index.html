@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -7,62 +8,65 @@
   </head>
 
   <body>
-    <!-- Шапка -->
-    <header class="main-header">
-      <nav class="navigation">
+    <!-- Центровка страницы -->
+    <div class="page-container">
+      <!-- Шапка -->
+      <header class="main-header">
 
         <!-- Лого -->
         <a class="navigation-logo" href="#">
           <img class="logo" src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
         </a>
 
-        <!-- Список навигации -->
-        <ul class="navigation-list">
-          <li class="navigation-tiem">
-            <span class="visually-hidden">
-              Поиск
-            </span>
-          </li>
-          <li class="navigation-tiem">
-            <button class="login" type="button">
-              Войти
+        <!-- Навигация -->
+        <nav class="navigation">
+          <!-- Поиск -->
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-field">Поиск</label>
+            <input class="field" placeholder="Текст поиска" type="text" name="search-field" id="search-field"
+              required="">
+            <button class="search-button" type="submit">
+              Найти
             </button>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <button class="Compare" type="button">
-              Сравнить
-            </button>
-          </li>
-          <li class="navigation-user-item">
-            <button class="recycle-bin" type="button">
-              Корзина
-            </button>
-          </li>
-        </ul>
+          </form>
 
-        <!-- Раскрывающиеся меню каталога товаров -->
-        <span class="headar-catalog"></span>
+          <button class="login-button" type="button">Войти</button>
+          <button class="compare-button" type="button">Сравнить</button>
+          <button class="recycle-bin-button" type="button">Корзина</button>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <button class="Compare" type="button">
+                Сравнить
+              </button>
+            </li>
+            <li class="navigation-user-item">
+              <button class="recycle-bin" type="button">
+                Корзина
+              </button>
+            </li>
+          </ul>
 
-        <!-- О заказе -->
-        <ul class="about-the-product">
-          <li class="product-item">
-            Доставка
-          </li>
-          <li class="product-item">
-            Гарантия
-          </li>
-          <li class="product-item">
-            Контакты
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <!-- Раскрывающиеся меню каталога товаров -->
+          <span class="headar-catalog"></span>
 
-    <!-- Как и договорились, нижнюю часть в коммент. Делаю по блокам -->
+          <!-- О заказе -->
+          <ul class="about-the-product">
+            <li class="product-item">
+              Доставка
+            </li>
+            <li class="product-item">
+              Гарантия
+            </li>
+            <li class="product-item">
+              Контакты
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- Основная часть страницы
+      <!-- Как и договорились, нижнюю часть в коммент. Делаю по блокам -->
+
+      <!-- Основная часть страницы
     <main class="main-index">
 
       Слайдер товаров
@@ -179,5 +183,7 @@
     <footer class="main-footer">
 
     </footer> -->
+    </div>
   </body>
+
 </html>
