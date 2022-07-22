@@ -60,19 +60,35 @@ body {
 .page-container {
   width: 1160px;
   margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
 }
 
 /* Лого */
 .logo {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+/* Хедер главной страницы */
+.main-header {
+  background-color: #FFE17F;
+}
+
+/* Пользовальская верхняя часть страницы */
+.user-container {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 46px;
 }
 
 /* Поисковое поле */
 .search-form {
   display: flex;
-  outline: 3px solid greenyellow;
   position: relative;
+  align-items: flex-start;
 }
 
 .search-field {
@@ -83,7 +99,7 @@ body {
   background-color: transparent;
   color: #000000;
   border: 2px solid #000000;
-  border-radius: 50px 0px 0px 50px;
+  border-radius: 50px 0 0 50px;
   min-width: 360px;
   box-sizing: border-box;
 }
@@ -109,14 +125,72 @@ body {
   left: 16px;
 }
 
-.user-container {
-  display: flex;
-  outline: 3px solid yellow;
-  justify-content: space-between;
-  margin-left: 60px;
-  margin-right: 60px;
+/* Кнопка поиска */
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 160px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+/* Контейнер кнопок пользователя */
+.user-buttons-container {
+  margin-left: 28px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 28px;
+}
+
+/* Кнопки пользователя */
+.user-button {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  padding: 0;
+  padding-top: 9px;
+  border: none;
+  outline: black 3px solid;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* padding-left: 27px; */
+  cursor: pointer;
+}
+
+/* Войти */
+.login-button {
+  background-image: url("../images/header/login-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  grid-column: 1;
+}
+
+/* Сравнить */
+.compare-button {
+  background-image: url("../images/header/compare-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  grid-column: 3;
+}
+
+/* Корзина */
+.recycle-bin-button {
+  background-image: url("../images/header/recycle-bin-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  grid-column: 4;
+}
 
 /* Навигация */
 .navigation {
