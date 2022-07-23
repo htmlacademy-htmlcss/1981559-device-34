@@ -42,7 +42,36 @@
         <!-- Навигация -->
         <nav class="navigation">
           <!-- Раскрывающиеся меню каталога товаров -->
-          <span class="headar-catalog">Каталог товаров</span>
+          <button class="header-catalog-button catalog-button-list" type="button">
+            Каталог товаров
+            <div class="decorative-plus-sign"></div>
+            <div class="catalog-popover catalog-popover-open">
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </button>
 
           <!-- О заказе -->
           <ul class="about-the-product">
