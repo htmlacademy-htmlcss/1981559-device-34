@@ -163,6 +163,26 @@ body {
   padding-bottom: 10px;
 }
 
+.search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.search-button:disabled {
+  opacity: 0.3;
+}
+
+
 /* Контейнер кнопок пользователя */
 .user-buttons-container {
   margin-left: 28px;
@@ -186,6 +206,29 @@ body {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  position: relative;
+}
+
+.user-button:hover {
+  opacity: 0.6;
+}
+
+.user-button:active {
+  opacity: 0.3;
+}
+
+.user-button:focus-visible {
+  outline: none;
+}
+
+.user-button:focus-visible.user-button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding-right: 3px;
+  outline: 2px solid #af4fff;
+  align-self: flex-end;
 }
 
 /* Войти */
@@ -261,6 +304,11 @@ body {
   position: relative;
 }
 
+.catalog-button-list:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 /* Декоративный плюсик */
 .decorative-plus-sign {
   width: 50px;
@@ -301,7 +349,8 @@ body {
   min-height: 75px;
   padding: 33px 60px 27px 60px;
   color: #242424;
-  background-color: #ffe17f;;
+  background-color: #ffe17f;
+  ;
   position: absolute;
   top: 33px;
   left: -60px;
@@ -359,4 +408,17 @@ body {
 .product-link {
   text-decoration: none;
   color: #000000;
+}
+
+.product-link:hover {
+  opacity: 0.6;
+}
+
+.product-link:active {
+  opacity: 0.3;
+}
+
+.product-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
