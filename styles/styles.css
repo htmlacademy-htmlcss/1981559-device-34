@@ -71,9 +71,21 @@ body {
   left: 60px;
 }
 
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.logo:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 /* Хедер главной страницы */
 .main-header {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 /* Пользовальская верхняя часть страницы */
@@ -99,18 +111,27 @@ body {
   background-color: transparent;
   color: #000000;
   border: 2px solid #000000;
+  border-right: 1px solid #000000;
   border-radius: 50px 0 0 50px;
   min-width: 360px;
   box-sizing: border-box;
+  position: relative;
 }
 
-.search-field::placeholder {
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
+.search-field:focus {
+  outline: none;
+}
+
+.search-field:focus + .for-focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.search-form:disabled {
+  opacity: 0.3;
 }
 
 /* Иконка поиска */
@@ -135,6 +156,7 @@ body {
   min-width: 160px;
   background-color: transparent;
   border: 2px solid #000000;
+  border-left: 1px solid #000000;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
   padding-top: 10px;
