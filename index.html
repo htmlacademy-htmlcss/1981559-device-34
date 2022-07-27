@@ -15,7 +15,7 @@
 
         <!-- Лого -->
         <a class="navigation-logo" href="#">
-          <img class="logo" src="images/header/header-logo.svg" width="146" height="36"alt="Логотип сайта.">
+          <img class="logo" src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
         </a>
 
         <!-- Поиск -->
@@ -43,10 +43,12 @@
         <!-- Навигация -->
         <nav class="navigation">
           <!-- Раскрывающиеся меню каталога товаров -->
-          <button class="header-catalog-button catalog-button-list" type="button">
-            Каталог товаров
-            <div class="decorative-plus-sign"></div>
-            <div class="catalog-popover catalog-popover-close">
+          <div class="catalog-button-wrapper">
+            <button class="header-catalog-button catalog-button-list" type="button">
+              Каталог товаров
+              <span class="decorative-plus-sign"></span>
+            </button>
+            <div class="catalog-popover">
               <ul class="catalog-column">
                 <li class="catalog-column-row">
                   <a class="catalog-column-link" href="#">Виртуальная реальность</a>
@@ -72,7 +74,7 @@
                 </li>
               </ul>
             </div>
-          </button>
+          </div>
 
           <!-- О заказе -->
           <ul class="about-the-product">

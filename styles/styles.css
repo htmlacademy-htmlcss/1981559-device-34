@@ -280,6 +280,10 @@ body {
 }
 
 /* Каталог товаров */
+.catalog-button-wrapper {
+  position: relative;
+}
+
 .header-catalog-button {
   cursor: pointer;
   background-color: transparent;
@@ -348,20 +352,21 @@ body {
   padding: 33px 60px 27px 60px;
   color: #242424;
   background-color: #ffe17f;
-  ;
   position: absolute;
   top: 33px;
   left: -60px;
-  z-index: -1;
   box-sizing: border-box;
   cursor: default;
-  display: grid;
+  display: none;
   grid-template-columns: 252px 211px 211px;
 }
 
-/* Закрытие поповера */
-.catalog-popover-close {
-  display: none;
+.catalog-button-list:hover + .catalog-popover {
+  display: grid;
+}
+
+.catalog-popover:hover {
+  display: grid;
 }
 
 .catalog-column-link {
