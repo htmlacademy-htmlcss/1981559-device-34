@@ -500,7 +500,7 @@ body {
 
 .description-title {
   margin: 0;
-  margin-top: 90px;
+  margin-top: 100px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -613,4 +613,13 @@ body {
   margin: 0;
   font-size: 36px;
   grid-row: 1 / 2;
+}
+
+/* Второй слайдер */
+.slider-number-2 {
+  display: none;
+}
+
+.slider-number-3 {
+  display: none;
 }
