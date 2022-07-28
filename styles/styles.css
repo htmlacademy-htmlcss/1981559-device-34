@@ -515,7 +515,8 @@ body {
 
 .button-and-points {
   margin-top: 50px;
-  /* outline: 3px solid greenyellow; */
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Стили кнопок с полоской в середине */
@@ -564,4 +565,31 @@ body {
 /* Кнопка подробнее в слайдере */
 .slider-detailed-button {
   min-width: 220px;
+}
+
+/* Маркеры пагинации */
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  background-color: #000000;
+}
+
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.slider-pagination-item {
+  list-style-type: none;
 }
