@@ -435,8 +435,9 @@ body {
 
 /* Контейнер со слайдером */
 .slider-group {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  gap: 40px;
 }
 
 /* Задний фон слайдера */
@@ -457,7 +458,7 @@ body {
   line-height: 30px;
   color: #ffffff;
   position: absolute;
-  right: 0;
+  right: 50px;
   bottom: 40px;
   cursor: default;
   z-index: -1;
@@ -467,12 +468,13 @@ body {
 .slider {
   outline: 3px solid salmon;
   position: relative;
+  grid-column: 1 / 2;
 }
 
 /* Кнопки слайдера */
 .slider-controls {
   position: absolute;
-  top: 45%;
+  top: 245px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -490,4 +492,28 @@ body {
 
 .slider-next {
   transform: rotate(180deg);
+}
+
+/* Описание слайдера */
+.slider-description {
+  grid-column: 2 / 3;
+}
+
+.description-title {
+  margin: 0;
+  margin-top: 90px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.description-text {
+  margin: 0;
+  margin-top: 30px;
+}
+
+.button-and-points {
+  margin-top: 50px;
+  outline: 3px solid greenyellow;
 }
