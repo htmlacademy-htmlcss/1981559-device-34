@@ -343,11 +343,11 @@ body {
   height: 2px;
   background-color: #000000;
   transform: translate(-50%) rotate(90deg);
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 
-.decorative-plus-sign:hover::after {
-  transform: translate(-50%) rotate(180deg);
+.catalog-button-wrapper:hover .decorative-plus-sign::after {
+  transform: translate(-50%) rotate(360deg);
 }
 
 /* Поповер каталога товаров */
@@ -364,7 +364,6 @@ body {
   cursor: default;
   display: none;
   grid-template-columns: 252px 211px 211px;
-  /* transition: display 2s; */
 }
 
 .catalog-button-list:hover + .catalog-popover {
