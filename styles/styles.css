@@ -597,22 +597,24 @@ body {
 .characteristics {
   margin: 0;
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 20px;
-  justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.characteristics-container {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .characteristics-termin {
   font-size: 16px;
-  grid-row: 2 / 3;
   margin-top: 12px;
 }
 
 .characteristics-definition {
   margin: 0;
   font-size: 36px;
-  grid-row: 1 / 2;
 }
 
 /* Второй слайдер */
