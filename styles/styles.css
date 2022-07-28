@@ -466,7 +466,6 @@ body {
 
 /* Слайдер */
 .slider {
-  outline: 3px solid salmon;
   position: relative;
   grid-column: 1 / 2;
 }
@@ -592,4 +591,26 @@ body {
 
 .slider-pagination-item {
   list-style-type: none;
+}
+
+/* Характерстики товара в слайдере */
+.characteristics {
+  margin: 0;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 20px;
+  justify-content: start;
+}
+
+.characteristics-termin {
+  font-size: 16px;
+  grid-row: 2 / 3;
+  margin-top: 12px;
+}
+
+.characteristics-definition {
+  margin: 0;
+  font-size: 36px;
+  grid-row: 1 / 2;
 }
