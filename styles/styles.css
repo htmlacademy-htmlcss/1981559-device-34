@@ -282,6 +282,7 @@ body {
 /* Каталог товаров */
 .catalog-button-wrapper {
   position: relative;
+  z-index: 1;
 }
 
 .header-catalog-button {
@@ -346,6 +347,7 @@ body {
   transition: transform 0.3s;
 }
 
+/* Вращение декоративного плюса */
 .catalog-button-wrapper:hover .decorative-plus-sign::after {
   transform: translate(-50%) rotate(360deg);
 }
@@ -429,4 +431,63 @@ body {
 .product-link:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+/* Контейнер со слайдером */
+.slider-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Задний фон слайдера */
+.slider-group-background {
+  background-color: #ffe17f;
+  width: 1160px;
+  min-height: 125px;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Номер слайдера */
+.slider-group-number {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  cursor: default;
+  z-index: -1;
+}
+
+/* Слайдер */
+.slider {
+  outline: 3px solid salmon;
+  position: relative;
+}
+
+/* Кнопки слайдера */
+.slider-controls {
+  position: absolute;
+  top: 45%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.slider-button {
+  background-image: url("/images/slider/arrow.svg");
+  width: 20px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-next {
+  transform: rotate(180deg);
 }

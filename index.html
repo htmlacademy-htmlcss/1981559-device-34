@@ -91,57 +91,64 @@
         </nav>
       </header>
 
-      <!-- Как и договорились, нижнюю часть в коммент. Делаю по блокам -->
+      <!-- Основная часть страницы -->
+      <main class="main-index">
 
-      <!-- Основная часть страницы
-    <main class="main-index">
+        <!-- Слайдер товаров -->
+        <section class="slider-group">
+          <h1 class="visually-hidden">Слайдер товаров</h1>
+          <div class="slider-group-background">
+            <span class="slider-group-number">01</span>
+          </div>
+          <div class="slider">
+            <img class="slider-image" src="/images/slider/slider-1.png" width="560" height="560" alt="Квадракоптер.">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+          </div>
 
-      Слайдер товаров
-      <section class="slider-group">
-        <h1 class="visually-hidden">Слайдер товаров</h1>
+          <div class="slider-description">
+            <p class="description-title">Порхает как бабочка, жалит как пчела!</p>
+            <p class="description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.</p>
 
-        <img class="slider-image" src="" alt="Квадракоптер." >
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+            <button class="slider-detailed-button">Подробнее</button>
 
-        <p class="description-title">Порхает как бабочка, жалит как пчела!</p>
-        <p class="description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            Точки выбранного пункта слайда товара
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
 
-        <button class="slider-detailed-button">Подробнее</button>
+            Характеристики товара
+            <dl class="characteristics">
+              <dt class="characteristics-termin">Дальность полета</dt>
+              <dd class="characteristics-definition">800 м</dd>
+              <dt class="characteristics-termin">Радиус поражения</dt>
+              <dd class="characteristics-definition">50 м</dd>
+            </dl>
+          </div>
+        </section>
 
-        Точки выбранного пункта слайда товара
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
-
-        Характеристики товара
-        <dl class="characteristics">
-          <dt class="characteristics-termin">Дальность полета</dt>
-            <dd class="characteristics-definition">800 м</dd>
-          <dt class="characteristics-termin">Радиус поражения</dt>
-            <dd class="characteristics-definition">50 м</dd>
-        </dl>
-
-      </section>
-
+        <!--
       Категории товаров
       <section class="product-categories">
         <h1 class="visually-hidden">Категории товаров</h1>
