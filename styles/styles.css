@@ -625,3 +625,56 @@ body {
 .slider-number-3 {
   display: none;
 }
+
+/* Категории товаров */
+.category-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.category-item {
+  max-width: 160px;
+}
+
+.category-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  position: relative;
+}
+
+/* Стили для картинок товаров */
+.category-image {
+  background-color: #ffe17f;
+  display: block;
+}
+
+.category-link:hover .category-image {
+  background-color: #ffcc33;
+}
+
+.category-link:active {
+  opacity: 0.3;
+}
+
+.category-link:focus {
+  outline: 2px solid #af4fff;
+}
+
+.category-link::after {
+  content: "";
+  width: 160px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline-offset: 2px;
+  z-index: -1;
+  outline: 2px solid #af4fff;
+}
