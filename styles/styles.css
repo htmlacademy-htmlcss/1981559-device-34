@@ -683,3 +683,12 @@ body {
   margin: 0;
   margin-top: 33px;
 }
+
+/* Преимущества заказа */
+.advantages-list {
+
+}
+
+.advantages-item {
+  list-style-type: none;
+}
