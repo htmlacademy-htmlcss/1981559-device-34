@@ -632,7 +632,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
 }
 
 .category-item {
@@ -663,18 +665,21 @@ body {
   opacity: 0.3;
 }
 
-.category-link:focus {
+.category-link:focus-visible {
+  outline: none;
+}
+
+.category-link:focus-visible .for-focus-category {
   outline: 2px solid #af4fff;
 }
 
-.category-link::after {
-  content: "";
-  width: 160px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.for-focus-category {
+  width: 100%;
+  min-height: 100%;
   outline-offset: 2px;
-  z-index: -1;
-  outline: 2px solid #af4fff;
+}
+
+.category-link-title {
+  margin: 0;
+  margin-top: 33px;
 }
