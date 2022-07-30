@@ -296,6 +296,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 0;
+  z-index: 2;
 }
 
 /* Раскрывающийся каталог товаров */
