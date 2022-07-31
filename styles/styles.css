@@ -728,6 +728,9 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  background-image: url("/images/advantages/deliveryman.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 25%;
 }
 
 .advantages-item {
@@ -756,6 +759,7 @@ body {
   margin-left: 412px;
   position: absolute;
   top: 0;
+  max-width: 450px;
 }
 
 .advantages-description {
@@ -763,6 +767,7 @@ body {
   margin-left: 412px;
   margin-top: 34px;
   position: absolute;
+  max-width: 455px;
 }
 
 .advantages-button {
@@ -780,6 +785,20 @@ body {
   border: none;
   background-color: #000000;
   width: 280px;
-  padding: 10px 35px;
+  padding: 10px 20px;
   text-align: start;
+  cursor: pointer;
+}
+
+.selected-advantages-button:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.selected-advantages-button:active  {
+ color: rgba(255, 225, 127, 0.3);
+}
+
+.selected-advantages-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
