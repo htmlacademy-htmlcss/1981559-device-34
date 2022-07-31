@@ -64,6 +64,17 @@ body {
   position: relative;
 }
 
+.page-main-container {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.delivery-centerer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* Лого */
 .navigation-logo {
   position: absolute;
@@ -687,13 +698,12 @@ body {
 /* Преимущества заказа */
 .delivery-advantages {
   margin-top: 70px;
-  outline: 3px solid salmon;
-  position: relative;
   margin-bottom: 72px;
+  position: relative;
 }
 
 /* Декоративная полоска */
-.delivery-advantages::after {
+.advantages-list::after {
   content: '';
   position: absolute;
   width: 7px;
@@ -704,7 +714,7 @@ body {
 }
 
 .background-wrapper {
-  background-color:  #f0f0f0;
+  background-color: #f0f0f0;
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -717,6 +727,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .advantages-item {
