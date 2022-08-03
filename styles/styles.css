@@ -793,8 +793,8 @@ body {
   color: rgba(255, 225, 127, 0.5);
 }
 
-.selected-advantages-button:active  {
- color: rgba(255, 225, 127, 0.3);
+.selected-advantages-button:active {
+  color: rgba(255, 225, 127, 0.3);
 }
 
 .selected-advantages-button:focus-visible {
