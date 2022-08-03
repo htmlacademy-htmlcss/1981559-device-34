@@ -542,8 +542,8 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  z-index: 0;
   position: relative;
+  z-index: 0;
 }
 
 .button-with-strip::before {
@@ -564,6 +564,10 @@ body {
 
 .button-with-strip:active {
   background-color: #ffcc33;
+}
+
+.button-with-strip:active:before {
+  display: none;
 }
 
 .button-with-strip:focus-visible {
@@ -802,12 +806,14 @@ body {
   margin: 0;
   margin-left: 123px;
   padding: 0;
-  background-image: url("/images/advantages/deliveryman.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
   flex-grow: 1;
 }
 
+.delivery-block {
+  background-image: url("/images/advantages/deliveryman.svg");
+  background-repeat: no-repeat;
+  background-position: 90% top;
+}
 
 .next-section {
   background-color: #ffcc33;
