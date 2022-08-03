@@ -22,12 +22,13 @@
         <div class="user-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="search-field">Поиск</label>
-            <input class="search-field" placeholder="Текст поиска" type="text" name="search-field" id="search-field"
-              required="">
-            <button class="search-button" type="submit">
-              Найти
-            </button>
+            <input class="search-field" placeholder="Поиск по сайту" value="Текст поиска" type="text"
+              name="search-field" id="search-field" required="">
+            <div class="for-focus"></div>
           </form>
+          <button class="search-button" type="submit">
+            Найти
+          </button>
 
           <div class="user-buttons-container">
             <button class="user-button login-button" type="button">Войти</button>
@@ -42,18 +43,49 @@
         <!-- Навигация -->
         <nav class="navigation">
           <!-- Раскрывающиеся меню каталога товаров -->
-          <span class="headar-catalog">Каталог товаров</span>
+          <div class="catalog-button-wrapper">
+            <button class="header-catalog-button catalog-button-list" type="button">
+              Каталог товаров
+              <span class="decorative-plus-sign"></span>
+            </button>
+            <div class="catalog-popover">
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <!-- О заказе -->
           <ul class="about-the-product">
-            <li class="product-item">
-              Доставка
+            <li class="header-catalog-button">
+              <a class="product-link" href="#">Доставка</a>
             </li>
-            <li class="product-item">
-              Гарантия
+            <li class="header-catalog-button">
+              <a class="product-link" href="#">Гарантия</a>
             </li>
-            <li class="product-item">
-              Контакты
+            <li class="header-catalog-button">
+              <a class="product-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
