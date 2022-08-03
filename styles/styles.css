@@ -282,6 +282,7 @@ body {
 /* Каталог товаров */
 .catalog-button-wrapper {
   position: relative;
+  z-index: 1;
 }
 
 .header-catalog-button {
@@ -296,7 +297,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Раскрывающийся каталог товаров */
@@ -347,6 +348,7 @@ body {
   transition: transform 0.3s;
 }
 
+/* Вращение декоративного плюса */
 .catalog-button-wrapper:hover .decorative-plus-sign::after {
   transform: translate(-50%) rotate(360deg);
 }
@@ -384,6 +386,19 @@ body {
   color: #000000;
   text-transform: none;
   letter-spacing: normal;
+}
+
+.catalog-column-link:hover {
+  opacity: 0.6;
+}
+
+.catalog-column-link:active {
+  opacity: 0.3;
+}
+
+.catalog-column-link:focus-visible {
+  outline: 2px solid  #af4fff;
+  outline-offset: 2px;
 }
 
 .catalog-column {
@@ -430,4 +445,197 @@ body {
 .product-link:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+/* Контейнер со слайдером */
+.slider-group {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  gap: 40px;
+}
+
+/* Задний фон слайдера */
+.slider-group-background {
+  background-color: #ffe17f;
+  width: 1160px;
+  min-height: 125px;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Номер слайдера */
+.slider-group-number {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  cursor: default;
+  z-index: -1;
+}
+
+/* Слайдер */
+.slider {
+  position: relative;
+  grid-column: 1 / 2;
+}
+
+/* Кнопки слайдера */
+.slider-controls {
+  position: absolute;
+  top: 245px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.slider-button {
+  background-image: url("/images/slider/arrow.svg");
+  width: 20px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
+/* Описание слайдера */
+.slider-description {
+  grid-column: 2 / 3;
+}
+
+.description-title {
+  margin: 0;
+  margin-top: 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.description-text {
+  margin: 0;
+  margin-top: 30px;
+}
+
+.button-and-points {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили кнопок с полоской в середине */
+.button-with-strip {
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.button-with-strip::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #ffe17f;
+  z-index: -1;
+  display: flex;
+}
+
+.button-with-strip:hover {
+  background-color: #ffe17f;
+}
+
+.button-with-strip:active {
+  background-color: #ffcc33;
+}
+
+.button-with-strip:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.button-with-strip:disabled {
+  opacity: 0.3;
+}
+
+/* Кнопка подробнее в слайдере */
+.slider-detailed-button {
+  min-width: 220px;
+}
+
+/* Маркеры пагинации */
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  background-color: #000000;
+}
+
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.slider-pagination-item {
+  list-style-type: none;
+}
+
+/* Характерстики товара в слайдере */
+.characteristics {
+  margin: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.characteristics-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.characteristics-termin {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.characteristics-definition {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Второй слайдер */
+.slider-number-2 {
+  display: none;
+}
+
+.slider-number-3 {
+  display: none;
 }
