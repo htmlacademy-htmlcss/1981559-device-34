@@ -581,6 +581,9 @@ body {
 /* Кнопка подробнее в слайдере */
 .slider-detailed-button {
   min-width: 220px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Маркеры пагинации */
