@@ -73,6 +73,7 @@ body {
 .delivery-centerer-container {
   width: 1160px;
   margin: 0 auto;
+  display: flex;
 }
 
 /* Лого */
@@ -541,6 +542,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  z-index: 0;
   position: relative;
 }
 
@@ -552,8 +554,8 @@ body {
   top: 50%;
   transform: translate(0, -50%);
   background-color: #ffe17f;
-  z-index: -1;
   display: flex;
+  z-index: -1;
 }
 
 .button-with-strip:hover {
@@ -659,7 +661,6 @@ body {
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
-  position: relative;
 }
 
 /* Стили для картинок товаров */
@@ -698,7 +699,6 @@ body {
 /* Преимущества заказа */
 .delivery-advantages {
   margin-top: 70px;
-  margin-bottom: 72px;
   position: relative;
 }
 
@@ -715,7 +715,6 @@ body {
 
 .background-wrapper {
   background-color: #f0f0f0;
-  z-index: -1;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -728,9 +727,6 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-image: url("/images/advantages/deliveryman.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 25%;
 }
 
 .advantages-item {
@@ -756,17 +752,13 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  margin-left: 412px;
-  position: absolute;
-  top: 0;
+  margin-top: 73px;
   max-width: 450px;
 }
 
 .advantages-description {
   margin: 0;
-  margin-left: 412px;
-  margin-top: 34px;
-  position: absolute;
+  margin-top: 30px;
   max-width: 455px;
 }
 
@@ -801,4 +793,16 @@ body {
 .selected-advantages-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.advantages-description-container {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 123px;
+  padding: 0;
+  background-image: url("/images/advantages/deliveryman.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  flex-grow: 1;
+  z-index: 1;
 }
