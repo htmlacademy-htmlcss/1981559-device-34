@@ -388,6 +388,19 @@ body {
   letter-spacing: normal;
 }
 
+.catalog-column-link:hover {
+  opacity: 0.6;
+}
+
+.catalog-column-link:active {
+  opacity: 0.3;
+}
+
+.catalog-column-link:focus-visible {
+  outline: 2px solid  #af4fff;
+  outline-offset: 2px;
+}
+
 .catalog-column {
   margin: 0;
   padding: 0;
