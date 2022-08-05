@@ -336,29 +336,71 @@ body {
 }
 
 .cart-item {
-  margin: 20px;
-  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: 39px 1fr 25px;
+  gap: 23px;
+}
+
+.cart-image {
+  grid-column: 1 / 2;
 }
 
 .cart-item-name {
   margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  grid-column: 2 / 3;
 }
 
 .delete-cart-item {
   border: none;
   background-color: #000000;
+  padding: 0;
+  grid-column: 3 / 4;
+  align-self: start;
+  justify-self: end;
+  cursor: pointer;
 }
 
 .popover-number-of-goods {
+  list-style-type: none;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
   background-color: #1a1a1a;
 }
 
-.opne-cart-item {
+.amount-of-goods {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.total-price {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.open-cart-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
-  margin: 20px;
-  padding: 15px 25px;
+  margin: 19px;
+  padding: 15px 24px;
+  display: flex;
 }
 
 /* Навигация */
