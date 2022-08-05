@@ -91,6 +91,7 @@ body {
 /* Пользовальская верхняя часть страницы */
 .user-container {
   display: flex;
+  align-items: flex-start;
   margin-left: 60px;
   margin-right: 60px;
   padding-top: 46px;
@@ -199,11 +200,14 @@ body {
 
 /* Контейнер кнопок пользователя */
 .user-buttons-container {
+  margin: 0;
   margin-left: 28px;
   flex-grow: 1;
   display: grid;
   grid-template-columns: auto 1fr 105px 1fr;
   gap: 28px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 /* Кнопки пользователя */
@@ -221,6 +225,7 @@ body {
   justify-content: flex-end;
   cursor: pointer;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .user-button:hover {
@@ -248,26 +253,33 @@ body {
 /* Войти */
 .login-button {
   background-image: url("../images/header/login-icon.svg");
-  background-repeat: no-repeat;
   background-position: 0 center;
-  grid-column: 1;
   padding-left: 27px;
+}
+
+.login-item {
+  grid-column: 1 / 2;
 }
 
 /* Сравнить */
 .compare-button {
   background-image: url("../images/header/compare-icon.svg");
-  background-repeat: no-repeat;
   background-position: 0 center;
-  grid-column: 3;
+  padding-left: 27px;
+}
+
+.compare-item {
+  grid-column: 3 / 4;
 }
 
 /* Корзина */
 .recycle-bin-button {
   background-image: url("../images/header/recycle-bin-icon.svg");
-  background-repeat: no-repeat;
   background-position: center right 81px;
-  grid-column: 4;
+}
+
+.recycle-bin-item {
+  grid-column: 4 / 5;
 }
 
 /* Количество покупок */
@@ -284,6 +296,21 @@ body {
   margin-top: 4px;
   margin-right: 18px;
 }
+
+/* Поповер */
+/* .popover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  min-height: 186px;
+} */
 
 /* Навигация */
 .navigation {
