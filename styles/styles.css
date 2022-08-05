@@ -280,6 +280,7 @@ body {
 
 .recycle-bin-item {
   grid-column: 4 / 5;
+  position: relative;
 }
 
 /* Количество покупок */
@@ -298,11 +299,11 @@ body {
 }
 
 /* Поповер */
-/* .popover {
+.popover {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+  top: 45px;
+  left: 0;
+  z-index: 3;
   box-sizing: border-box;
   width: 320px;
   padding: 20px;
@@ -310,7 +311,11 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 186px;
-} */
+}
+
+.popover-content {
+  height: 100%;
+}
 
 /* Навигация */
 .navigation {
