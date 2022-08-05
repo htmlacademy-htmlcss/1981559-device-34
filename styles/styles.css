@@ -483,6 +483,10 @@ body {
   transform: translate(-50%) rotate(360deg);
 }
 
+.catalog-button-wrapper:hover .decorative-plus-sign {
+  opacity: 1;
+}
+
 /* Поповер каталога товаров */
 .catalog-popover {
   width: 1160px;
