@@ -772,7 +772,7 @@ body {
   max-width: 455px;
 }
 
-.advantages-button {
+.advantages-item button {
   min-width: 160px;
 }
 
@@ -792,17 +792,23 @@ body {
   cursor: pointer;
 }
 
-.selected-advantages-button:hover {
-  color: rgba(255, 225, 127, 0.5);
+.selected-advantages-button.button-with-strip::before {
+  display: none;
 }
 
-.selected-advantages-button:active {
+.selected-advantages-button.selected-advantages-button:hover {
+  color: rgba(255, 225, 127, 0.5);
+  background-color: #000000;
+}
+
+.selected-advantages-button:active.button-with-strip {
   color: rgba(255, 225, 127, 0.3);
 }
 
-.selected-advantages-button:focus-visible {
+.selected-advantages-button:focus-visible.button-with-strip {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  z-index: 1;
 }
 
 .advantages-description-container {
@@ -823,6 +829,7 @@ body {
   background-image: url("/images/advantages/deliveryman.svg");
   background-repeat: no-repeat;
   background-position: 90% top;
+  display: none;
 }
 
 .guarantee-block {
@@ -839,7 +846,6 @@ body {
   display: none;
 }
 
-.next-section {
-  background-color: #ffcc33;
-  margin-top: 70px;
+.selected-block {
+  display: block;
 }
