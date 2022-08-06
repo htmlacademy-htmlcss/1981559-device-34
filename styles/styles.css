@@ -489,18 +489,21 @@ body {
 }
 
 /* Слайдер */
-.slider {
-  position: relative;
+.slider-image {
   grid-column: 1 / 2;
 }
 
 /* Кнопки слайдера */
+.slider-group {
+  position: relative;
+}
+
 .slider-controls {
   position: absolute;
   top: 245px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 560px;
   transform: translateY(-50%);
 }
 
