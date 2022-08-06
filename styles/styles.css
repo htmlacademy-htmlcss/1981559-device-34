@@ -310,6 +310,12 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 186px;
+  display: none;
+}
+
+/* Открытие поповера */
+.popover-open {
+  display: block;
 }
 
 .popover::after {
