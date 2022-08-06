@@ -452,11 +452,16 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 70px;
 }
 
 .slider-item {
+  display: grid;
   grid-template-columns: 560px 1fr;
   gap: 40px;
+  min-width: 1160px;
 }
 
 /* Задний фон слайдера */
@@ -649,7 +654,7 @@ body {
   font-size: 36px;
 }
 
-/* Все слайды */
+/* Все слайды. Расположены по горизонтали справа */
 .slider-number-1 {
   display: grid;
 }
