@@ -340,13 +340,13 @@ body {
   border-bottom: 1px solid #1a1a1a;
   display: flex;
   justify-content: space-between;
+  gap: 38px;
 }
 
 .cart-link {
   text-decoration: none;
   color: #ffffff;
   display: flex;
-  /* margin-right: 38px; */
 }
 
 .cart-link:hover {
@@ -357,7 +357,7 @@ body {
   opacity: 0.3;
 }
 
-.cart-link {
+.cart-link:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px ;
 }
