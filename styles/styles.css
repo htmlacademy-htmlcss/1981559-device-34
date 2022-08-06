@@ -449,7 +449,6 @@ body {
 
 /* Контейнер со слайдером */
 .slider-group {
-  display: grid;
   grid-template-columns: 560px 1fr;
   gap: 40px;
 }
@@ -591,33 +590,33 @@ body {
 /* Кнопка подробнее в слайдере */
 .slider-detailed-button {
   min-width: 220px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Маркеры пагинации */
-.slider-pagination-button {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.slider-pagination-button-current {
-  background-color: #000000;
-}
-
 .slider-pagination {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
 .slider-pagination-item {
   list-style-type: none;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+}
+
+.slider-pagination-current {
+  background-color: #000000;
 }
 
 /* Характерстики товара в слайдере */
@@ -644,7 +643,11 @@ body {
   font-size: 36px;
 }
 
-/* Второй слайдер */
+/* Все слайды */
+.slider-number-1 {
+  display: grid;
+}
+
 .slider-number-2 {
   display: none;
 }
