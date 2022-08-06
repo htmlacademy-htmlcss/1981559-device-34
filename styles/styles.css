@@ -448,7 +448,13 @@ body {
 }
 
 /* Контейнер со слайдером */
-.slider-group {
+.slider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item {
   grid-template-columns: 560px 1fr;
   gap: 40px;
 }
