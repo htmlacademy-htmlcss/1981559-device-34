@@ -433,6 +433,23 @@ body {
   display: flex;
 }
 
+.open-cart-item:hover {
+  background-color: #ffe17f;
+}
+
+.open-cart-item:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.open-cart-item:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.open-cart-item:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* Навигация */
 .navigation {
   margin: 30px 60px 0 60px;
