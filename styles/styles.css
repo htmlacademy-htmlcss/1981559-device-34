@@ -384,6 +384,23 @@ body {
   align-self: flex-start;
 }
 
+.delete-cart-item:hover {
+  opacity: 0.6;
+}
+
+.delete-cart-item:active {
+  opacity: 0.3;
+}
+
+.delete-cart-item:focus-visible {
+  outline: none;
+}
+
+.delete-cart-item:focus-visible > .delete-button-svg {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .popover-number-of-goods {
   list-style-type: none;
   padding: 12px 20px;
