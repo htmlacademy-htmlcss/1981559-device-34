@@ -1125,3 +1125,20 @@ body {
   top: 30px;
   right: 42px;
 }
+
+.order-delivery-link:hover.order-delivery-link::before {
+  background-color: #ffc700;
+}
+
+.order-delivery-link:hover.order-delivery-link::after {
+  background-image: url("/images/delivery-link/information-sign-active.svg");
+}
+
+.order-delivery-link:active {
+  opacity: 0.3;
+}
+
+.order-delivery-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
