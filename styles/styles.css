@@ -377,7 +377,7 @@ body {
 
 .cart-link:focus-visible {
   outline: 2px solid #af4fff;
-  outline-offset: 2px ;
+  outline-offset: 2px;
 }
 
 .cart-item:last-child {
@@ -598,7 +598,7 @@ body {
 }
 
 .catalog-column-link:focus-visible {
-  outline: 2px solid  #af4fff;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1074,4 +1074,53 @@ body {
 
 .selected-block {
   display: block;
+}
+
+/* Блок заказа доставки */
+.order-delivery {
+  margin-top: 70px;
+  display: flex;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.order-delivery::before {
+  content: '';
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  position: absolute;
+}
+
+.order-delivery::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);
+  background-image: url("/images/delivery-link/information-sign.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 42px;
+}
+
+.order-delivery-link {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-image: url("/images/delivery-link/delivery-link-image.svg");
+  background-repeat: no-repeat;
+  background-position: 39px 35px;
+  z-index: 1;
 }
