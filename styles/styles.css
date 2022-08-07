@@ -1084,28 +1084,6 @@ body {
   position: relative;
 }
 
-.order-delivery::before {
-  content: '';
-  width: 125px;
-  height: 100px;
-  background-color: #ffe17f;
-  position: absolute;
-}
-
-.order-delivery::after {
-  content: '';
-  width: 40px;
-  height: 40px;
-  background-color: rgba(220, 220, 220, 0.5);
-  background-image: url("/images/delivery-link/information-sign.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 30px;
-  right: 42px;
-}
-
 .order-delivery-link {
   text-decoration: none;
   color: #000000;
@@ -1119,8 +1097,31 @@ body {
   padding: 40px;
   display: flex;
   justify-content: center;
+}
+
+.order-delivery-link::before {
+  content: '';
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  position: absolute;
+  left: 0;
+  top: 0;
   background-image: url("/images/delivery-link/delivery-link-image.svg");
   background-repeat: no-repeat;
   background-position: 39px 35px;
-  z-index: 1;
+}
+
+.order-delivery-link::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);
+  background-image: url("/images/delivery-link/information-sign.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 42px;
 }
