@@ -1142,3 +1142,46 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
+
+/* Блок с информацией о нас и контактами */
+.contacts-container {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  display: flex;
+}
+
+.contact-item {
+  position: relative;
+}
+
+.contact-item::before {
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.contact-text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.delivery-companies {
+  list-style-type: none;
+  padding: 0;
+}
