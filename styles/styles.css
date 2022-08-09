@@ -1273,6 +1273,8 @@ body {
   margin: 0 auto;
   margin-top: 70px;
   width: 1160px;
+  padding-top: 64px;
+  padding-bottom: 56px;
 }
 
 .subscribe-title {
@@ -1281,7 +1283,6 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  padding-top: 64px;
 }
 
 .subscribe-text {
