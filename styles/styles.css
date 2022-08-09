@@ -1288,3 +1288,21 @@ body {
   margin: 0;
   max-width: 560px;
 }
+
+/* Форма подписки */
+.subscribe-form {
+  display: flex;
+}
+
+.field {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 11px 16px 14px 16px;
+  min-width: 557px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 3px solid #c4c4c4;
+  background-color: transparent;
+  box-sizing: border-box;
+}
