@@ -1263,3 +1263,28 @@ body {
   padding-left: 35px;
   padding-right: 30px;
 }
+
+/* Блок подписки на рассылку */
+.subscribe-centerer-container {
+  background-color: #f0f0f0;
+}
+
+.subscribe-block {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 1160px;
+}
+
+.subscribe-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding-top: 64px;
+}
+
+.subscribe-text {
+  margin: 0;
+  max-width: 560px;
+}
