@@ -1254,3 +1254,12 @@ body {
   margin-bottom: 40px;
   color: #444444;
 }
+
+/* разный отсуп вынудил меня сделать это */
+.contact-button-strange {
+  color: #000000;
+  text-decoration: none;
+  margin-top: 30px;
+  padding-left: 35px;
+  padding-right: 30px;
+}
