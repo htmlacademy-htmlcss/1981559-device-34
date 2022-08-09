@@ -1183,5 +1183,74 @@ body {
 
 .delivery-companies {
   list-style-type: none;
+  padding-left: 34px;
+  margin-bottom: 30px;
+}
+
+.delivery-company-name {
+  position: relative;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 19px;
+}
+
+.delivery-company-name::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #ffc700;
+  top: 50%;
+  left: -26px;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+}
+
+.contact-button {
+  color: #000000;
+  text-decoration: none;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.contacts-subtitle {
+  margin: 0;
+  font-size: 24px;
+  color: #444444;
+}
+
+.contacts-address-text {
+  font-style: normal;
+  color: #444444;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.contact-number {
+  color: #444444;
+  font-style: normal;
+  text-decoration-line: none;
+  position: relative;
+}
+
+.contact-number::before {
+  content: "";
+  position: absolute;
+  background-color: #444444;
+  width: 100%;
+  height: 1px;
+  bottom: 3px;
+}
+
+.contacts-street {
+  margin-bottom: 30px;
+}
+
+.contacts-schedule {
+  list-style-type: none;
   padding: 0;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: #444444;
 }
