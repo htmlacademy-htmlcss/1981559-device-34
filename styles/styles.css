@@ -1347,6 +1347,27 @@ body {
   min-width: 253px;
 }
 
+.subscribe-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 3px solid #000000;
+}
+
+.subscribe-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #000000;
+}
+
+.subscribe-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.subscribe-button:disabled {
+  opacity: 0.3;
+}
+
 .its-free {
   background-image: url("/images/subscribe-block/check-\ mark.svg");
   background-repeat: no-repeat;
