@@ -1275,6 +1275,12 @@ body {
   width: 1160px;
   padding-top: 64px;
   padding-bottom: 56px;
+  display: grid;
+  grid-template-columns: 350px 1fr 160px;
+  row-gap: 144px;
+  grid-template-areas: "title text text"
+                       "form form free";
+
 }
 
 .subscribe-title {
@@ -1283,16 +1289,20 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
+  grid-area: title;
 }
 
 .subscribe-text {
   margin: 0;
-  max-width: 560px;
+  max-width: 528px;
+  grid-area: text;
+  justify-self: end;
 }
 
 /* Форма подписки */
 .subscribe-form {
   display: flex;
+  grid-area: form;
 }
 
 .field {
@@ -1373,4 +1383,5 @@ body {
   background-repeat: no-repeat;
   background-position: 0 center;
   padding-left: 32px;
+  grid-area: free;
 }
