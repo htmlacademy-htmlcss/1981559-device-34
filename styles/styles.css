@@ -1505,4 +1505,16 @@ body {
 .footer-number {
   color: #ffffff;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+}
+
+.footer-number::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  height: 1px;
+  bottom: 3px;
 }
