@@ -1418,6 +1418,7 @@ body {
 
 .footer-text {
   margin-top: 71px;
+  margin-bottom: 71px;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -1475,13 +1476,33 @@ body {
   align-self: center;
 }
 
-.social-item {
-
+.social-link {
   width: 40px;
   height: 40px;
-
+  display: block;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.social-link svg {
+.social-link:hover {
+  background-color: #ffc700;
+}
 
+.social-link:active > svg {
+  opacity: 0.3;
+}
+
+.social-link:focus-visible {
+  outline: none;
+}
+
+.social-link:focus-visible > svg {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+/* Третий контейнер */
+.footer-number {
+  color: #ffffff;
+  text-decoration: none;
 }
