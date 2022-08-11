@@ -1518,3 +1518,21 @@ body {
   height: 1px;
   bottom: 3px;
 }
+
+.htmlacademy-link {
+  color: #ffc700;
+}
+
+.htmlacademy-link:hover {
+  color: #ffffff;
+}
+
+.htmlacademy-link:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.htmlacademy-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
