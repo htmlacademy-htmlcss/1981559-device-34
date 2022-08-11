@@ -1279,7 +1279,7 @@ body {
   grid-template-columns: 350px 1fr 160px;
   row-gap: 144px;
   grid-template-areas: "title text text"
-                       "form form free";
+    "form form free";
 
 }
 
@@ -1384,4 +1384,104 @@ body {
   background-position: 0 center;
   padding-left: 32px;
   grid-area: free;
+}
+
+/* Футер */
+.main-footer {
+  background-color: #444444;
+}
+
+.page-footer-container {
+  margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 50px;
+  max-width: 1160px;
+  display: grid;
+  grid-template-columns: 240px 455px 1fr;
+}
+
+/* Первый контейнер */
+.first-container {
+  background-image: url("/images/footer/footer-logo.svg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.first-container::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  bottom: 0;
+  background-color: #ffc700;
+}
+
+.footer-text {
+  margin-top: 71px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+/* Второй контейнер */
+.second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.footer-item-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-item-link:hover {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+}
+
+.footer-item-link:active {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+  opacity: 0.3;
+}
+
+.footer-item-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+/* Ссылки на соц. сети */
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  align-self: center;
+}
+
+.social-item {
+
+  width: 40px;
+  height: 40px;
+
+}
+
+.social-link svg {
+
 }
