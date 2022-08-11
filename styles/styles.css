@@ -1397,11 +1397,13 @@ body {
   padding-bottom: 50px;
   max-width: 1160px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 239px 456px 1fr;
+  gap: 124px;
 }
 
 /* Первый контейнер */
 .first-container {
+  grid-column: 1 / 2;
   background-image: url("/images/footer/footer-logo.svg");
   background-repeat: no-repeat;
   position: relative;
@@ -1428,14 +1430,15 @@ body {
 
 /* Второй контейнер */
 .second-container {
+  grid-column: 2 / 3;
   margin-top: 75px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .footer-list {
   margin: 0;
+  margin-bottom: 62px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -1474,6 +1477,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   align-self: center;
 }
@@ -1505,11 +1509,11 @@ body {
 
 /* Третий контейнер */
 .third-container {
+  grid-column: 3 / 4;
   margin-top: 78px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
   justify-self: end;
 }
 
@@ -1520,6 +1524,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   position: relative;
+  margin-bottom: 62px;
 }
 
 .footer-number::before {
