@@ -1157,13 +1157,15 @@ body {
 .contacts-container {
   list-style-type: none;
   margin: 0;
-  margin-top: 70px;
+  margin-top: 67px;
   padding: 0;
   display: flex;
+  gap: 113px;
 }
 
 .contact-item {
   position: relative;
+  max-width: 515px;
 }
 
 .contact-item::before {
@@ -1193,8 +1195,8 @@ body {
 
 .delivery-companies {
   list-style-type: none;
-  padding-left: 34px;
-  margin-bottom: 30px;
+  padding-left: 36px;
+  margin-bottom: 35px;
 }
 
 .delivery-company-name {
@@ -1211,7 +1213,7 @@ body {
   height: 8px;
   background-color: #ffc700;
   top: 50%;
-  left: -26px;
+  left: -33px;
   transform: translate(0, -50%);
   border-radius: 50%;
 }
@@ -1220,8 +1222,8 @@ body {
   color: #000000;
   text-decoration: none;
   margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 15px;
+  padding-left: 23px;
+  padding-right: 21px;
 }
 
 .contacts-subtitle {
@@ -1261,7 +1263,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   color: #444444;
 }
 
