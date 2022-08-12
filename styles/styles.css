@@ -671,7 +671,6 @@ body {
   width: 1160px;
   min-height: 125px;
   position: absolute;
-  z-index: -1;
 }
 
 /* Номер слайдера */
@@ -686,12 +685,12 @@ body {
   right: 50px;
   bottom: 40px;
   cursor: default;
-  z-index: -1;
 }
 
 /* Слайдер */
 .slider-image {
   grid-column: 1 / 2;
+  z-index: 0;
 }
 
 /* Кнопки слайдера */
@@ -737,6 +736,7 @@ body {
 /* Описание слайдера */
 .slider-description {
   grid-column: 2 / 3;
+  z-index: 0;
 }
 
 .description-title {
