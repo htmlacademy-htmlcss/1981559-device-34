@@ -1721,13 +1721,13 @@ body {
   margin-bottom: 7px;
 }
 
-.error-date {
+.input-support {
   grid-column: 2/-1;
   grid-row: 2/3;
   margin: 0;
   margin-bottom: 11px;
-  font-size: 16px;
-  color: #ff5757;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .label-exit-date {
@@ -1974,20 +1974,15 @@ body {
 }
 
 .auth-form input:hover {
-  background: #e6e6e6;
+  background-color: #dcdcdc;
+  border: 2px solid #dcdcdc;
 }
 
-.auth-form input:focus {
-  background: #e6e6e6;
-  outline: 3px solid #83b3d3;
-}
-
-.auth-form input:active {
-  background: #ffffff;
-  outline: 2px solid #000000;
+.auth-form input:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .auth-form input::placeholder {
-
   opacity: 0.5;
 }
