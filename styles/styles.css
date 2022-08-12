@@ -1416,8 +1416,8 @@ body {
   padding-bottom: 50px;
   max-width: 1160px;
   display: grid;
-  grid-template-columns: 239px 456px 1fr;
-  gap: 124px;
+  grid-template-columns: 239px 446px 1fr;
+  gap: 120px;
 }
 
 /* Первый контейнер */
@@ -1425,44 +1425,45 @@ body {
   grid-column: 1 / 2;
   background-image: url("/images/footer/footer-logo.svg");
   background-repeat: no-repeat;
-  position: relative;
   max-width: 240px;
 }
 
-.first-container::after {
+.footer-text {
+  margin-top: 71px;
+  padding-bottom: 71px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-text::after {
   content: '';
   position: absolute;
   width: 80px;
   height: 7px;
   bottom: 0;
+  left: 1px;
   background-color: #ffc700;
-}
-
-.footer-text {
-  margin-top: 71px;
-  margin-bottom: 71px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
 }
 
 /* Второй контейнер */
 .second-container {
   grid-column: 2 / 3;
-  margin-top: 75px;
+  margin-top: 71px;
   display: flex;
   flex-direction: column;
 }
 
 .footer-list {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 57px;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 31px;
 }
 
 .footer-item-link {
