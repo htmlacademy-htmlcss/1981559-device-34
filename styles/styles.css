@@ -325,7 +325,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 186px;
-  display: block;
+  display: none;
 }
 
 /* Открытие поповера */
