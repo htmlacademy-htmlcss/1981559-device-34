@@ -120,13 +120,13 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 10px 10px 48px;
+  padding: 8px 10px 8px 46px;
   background-color: transparent;
   color: #000000;
   border: 2px solid #000000;
   border-right: 1px solid #000000;
   border-radius: 50px 0 0 50px;
-  min-width: 360px;
+  min-width: 358px;
   box-sizing: border-box;
   position: relative;
 }
@@ -155,7 +155,7 @@ body {
   position: absolute;
   background-image: url("../images/header/search-icon.svg");
   background-repeat: no-repeat;
-  top: 14px;
+  top: 12px;
   left: 16px;
 }
 
@@ -172,8 +172,8 @@ body {
   border-left: 1px solid #000000;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   position: relative;
 }
 
@@ -213,10 +213,11 @@ body {
 /* Контейнер кнопок пользователя */
 .user-buttons-container {
   margin: 0;
-  margin-left: 28px;
+  margin-top: -4px;
+  margin-left: 26px;
   flex-grow: 1;
   display: grid;
-  grid-template-columns: auto 1fr 105px 1fr;
+  grid-template-columns: auto 1fr 105px 113px;
   gap: 28px;
   list-style-type: none;
   padding-left: 0;
@@ -265,7 +266,7 @@ body {
 /* Войти */
 .login-button {
   background-image: url("../images/header/login-icon.svg");
-  background-position: 0 center;
+  background-position: 0 17px;
   padding-left: 27px;
 }
 
@@ -287,7 +288,7 @@ body {
 /* Корзина */
 .recycle-bin-button {
   background-image: url("../images/header/recycle-bin-icon.svg");
-  background-position: center right 81px;
+  background-position: top 14px right 85px;
 }
 
 .recycle-bin-item {
@@ -308,6 +309,8 @@ body {
   line-height: 17px;
   margin-top: 4px;
   margin-right: 18px;
+  position: relative;
+  left: -4px;
 }
 
 /* Поповер */
