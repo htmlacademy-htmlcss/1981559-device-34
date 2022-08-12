@@ -1003,14 +1003,14 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  margin-top: 73px;
+  padding-top: 73px;
   max-width: 450px;
 }
 
 .advantages-description {
   margin: 0;
   margin-top: 33px;
-  max-width: 455px;
+  max-width: 480px;
 }
 
 .advantages-item button {
@@ -1062,7 +1062,7 @@ body {
 }
 
 .advantages-description-container li {
-  min-height: 195px;
+  min-height: 260px;
 }
 
 /* Блоки контейнера преимуществ */
@@ -1076,7 +1076,7 @@ body {
 .guarantee-block {
   background-image: url("/images/advantages/guarantee.svg");
   background-repeat: no-repeat;
-  background-position: 90% top;
+  background-position: 558px 62px;
   display: none;
 }
 
