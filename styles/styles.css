@@ -1052,6 +1052,12 @@ body {
   z-index: 1;
 }
 
+/* Возможно недочет дизайнера, испраляю проблему */
+
+.button-with-strip.selected-advantages-button {
+  padding: 10px 35px;
+}
+
 .advantages-description-container {
   list-style-type: none;
   margin: 0;
@@ -1083,7 +1089,7 @@ body {
 .credit-block {
   background-image: url("/images/advantages/credit.svg");
   background-repeat: no-repeat;
-  background-position: 90% top;
+  background-position: 573px 65px;
   display: none;
 }
 
