@@ -854,6 +854,11 @@ body {
   gap: 21px;
 }
 
+/* Полагаю ошибка дизайнера, исправляю вот таким вот способом */
+.slider-number-3 .characteristics {
+  gap: 41px;
+}
+
 .characteristics-container {
   display: flex;
   flex-direction: column-reverse;
@@ -871,7 +876,7 @@ body {
 
 /* Все слайды. Расположены по горизонтали справа */
 .slider-number-1 {
-  display: grid;
+  display: none;
 }
 
 .slider-number-2 {
@@ -879,7 +884,7 @@ body {
 }
 
 .slider-number-3 {
-  display: none;
+  display: grid;
 }
 
 /* Категории товаров */
