@@ -997,6 +997,11 @@ body {
   margin-bottom: 75px;
 }
 
+/* Исправляю возможную ошибку дизайнера */
+.advantages-item:nth-child(3) .selected-advantages-button {
+  padding: 10px 34px;
+}
+
 .advantages-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
