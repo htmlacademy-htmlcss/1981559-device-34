@@ -1054,9 +1054,9 @@ body {
 
 /* Возможно недочет дизайнера, испраляю проблему */
 
-.button-with-strip.selected-advantages-button {
+/* .button-with-strip.selected-advantages-button {
   padding: 10px 35px;
-}
+} */
 
 .advantages-description-container {
   list-style-type: none;
@@ -1075,7 +1075,7 @@ body {
 .delivery-block {
   background-image: url("/images/advantages/deliveryman.svg");
   background-repeat: no-repeat;
-  background-position: 90% 4px;
+  background-position: 90% 77px;
   display: none;
 }
 
