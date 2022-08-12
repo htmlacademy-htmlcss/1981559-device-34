@@ -1607,3 +1607,395 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
+
+/* Модальное окно */
+
+
+/* Модальное окно */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  padding-top: 62px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  width: 715px;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.modal-close-button:active {
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 63px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.auth-form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 155px 133px 1fr 135px;
+  position: relative;
+}
+
+.auth-form::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/calendar-icom.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 18px;
+  right: 19px;
+}
+
+.auth-form::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/calendar-icom.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 100px;
+  right: 19px;
+}
+
+.label-enter-date {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-bottom: 7px;
+}
+
+.auth-enter-field {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  padding: 15px 19px;
+  margin-bottom: 7px;
+}
+
+.error-date {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 16px;
+  color: #ff5757;
+}
+
+.label-exit-date {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-bottom: 4px;
+}
+
+.auth-exit-field {
+  grid-column: 2/-1;
+  grid-row: 3/4;
+  padding: 15px 19px;
+  margin-bottom: 7px;
+}
+
+.free-dates {
+  grid-column: 2/-1;
+  grid-row: 4/5;
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 16px;
+}
+
+.label-adults {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.adults-button {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.decrease-button {
+  opacity: 0.3;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-left: 19px;
+  position: relative;
+}
+
+.decrease-button::before {
+  content: "";
+  width: 13px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  left: 3px;
+}
+
+.increase-button {
+  opacity: 0.3;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-right: 19px;
+  justify-self: end;
+  position: relative;
+}
+
+.increase-button:hover,
+.decrease-button:hover {
+  opacity: 1;
+}
+
+.increase-button:focus,
+.decrease-button:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.increase-button:active,
+.decrease-button:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.increase-button::before {
+  content: "";
+  width: 13px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  left: 3px;
+}
+
+.increase-button::after {
+  content: "";
+  width: 13px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  left: 3px;
+  transform: rotate(90deg);
+}
+
+.auth-adults-field {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px 46px;
+}
+
+
+/* Убираю стрелки инпута взрослых */
+.auth-adults-field[type="number"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.auth-adults-field[type="number"]::-webkit-outer-spin-button,
+.auth-adults-field[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.children-container {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  justify-self: end;
+  margin-right: 18px;
+  display: flex;
+  position: relative;
+}
+
+.label-children {
+  margin-right: 30px;
+}
+
+.tooltip-toggle {
+  width: 25px;
+  height: 25px;
+  background-color: #83b3d3;
+  background-image: url("../images/information-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68a2ca;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 21px 18px 26px 22px;
+  border-radius: 8px;
+  width: 256px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  right: 12px;
+  transform: translate(50%, 15px);
+  display: none;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid #333333;
+  transform: translate(-50%);
+}
+
+.tooltip {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 0;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.auth-children-field {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  text-align: center;
+  padding: 15px 46px;
+}
+
+.children-button {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+/* Убираю стрелки инпута детей */
+.auth-children-field[type="number"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.auth-children-field[type="number"]::-webkit-outer-spin-button,
+.auth-children-field[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.auth-form .blue-button {
+  grid-column: 1/-1;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 12px 26px;
+  margin-top: 40px;
+}
+
+.auth-form .blue-button:focus-visible {
+  outline: 3px solid #756257;
+}
+
+.auth-form label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.auth-form input {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.auth-form input:hover {
+  background: #e6e6e6;
+}
+
+.auth-form input:focus {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.auth-form input:active {
+  background: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.auth-form input::placeholder {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  opacity: 0.5;
+}
