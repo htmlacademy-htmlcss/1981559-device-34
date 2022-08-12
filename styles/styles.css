@@ -217,7 +217,7 @@ body {
   margin-left: 26px;
   flex-grow: 1;
   display: grid;
-  grid-template-columns: auto 1fr 105px 113px;
+  grid-template-columns: auto 1fr 104px 113px;
   gap: 28px;
   list-style-type: none;
   padding-left: 0;
@@ -277,7 +277,7 @@ body {
 /* Сравнить */
 .compare-button {
   background-image: url("../images/header/compare-icon.svg");
-  background-position: 0 center;
+  background-position: 5px 17px;
   padding-left: 27px;
 }
 
@@ -504,7 +504,7 @@ body {
 .catalog-button-list {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 16px;
   position: relative;
 }
 
@@ -515,8 +515,8 @@ body {
 
 /* Декоративный плюсик */
 .decorative-plus-sign {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   border: 2px solid #000000;
   border-radius: 50%;
   opacity: 0.3;
