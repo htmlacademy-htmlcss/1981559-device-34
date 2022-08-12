@@ -317,7 +317,7 @@ body {
 .popover {
   position: absolute;
   top: 45px;
-  left: -126px;
+  left: -130px;
   z-index: 3;
   box-sizing: border-box;
   width: 320px;
@@ -325,7 +325,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 186px;
-  display: none;
+  display: block;
 }
 
 /* Открытие поповера */
@@ -561,7 +561,7 @@ body {
 .catalog-popover {
   width: 1160px;
   min-height: 75px;
-  padding: 33px 60px 27px 60px;
+  padding: 24px 60px 27px 60px;
   color: #242424;
   background-color: #ffe17f;
   position: absolute;
@@ -620,7 +620,7 @@ body {
 
 .catalog-column-row {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 
 /* Ссылки о продукте */
