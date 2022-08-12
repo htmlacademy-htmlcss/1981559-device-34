@@ -883,6 +883,10 @@ body {
 }
 
 /* Категории товаров */
+.product-categories {
+  margin-top: 70px;
+}
+
 .category-list {
   list-style-type: none;
   margin: 0;
