@@ -1609,9 +1609,6 @@ body {
 }
 
 /* Модальное окно */
-
-
-/* Модальное окно */
 .modal-container {
   position: fixed;
   top: 0;
@@ -1624,32 +1621,31 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
   position: relative;
   margin: auto;
-  padding: 70px;
-  padding-top: 62px;
+  padding: 72px 80px;
   background-color: #ffffff;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  border-radius: 30px;
-  width: 715px;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 10px solid #000000;
+  width: 920px;
   box-sizing: border-box;
 }
 
+/* Кнопка закрытия */
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
-  right: 70px;
-  width: 53px;
-  height: 53px;
-  background-color: #f2f2f2;
+  top: 84px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .modal-close-button svg {
@@ -1660,27 +1656,25 @@ body {
 }
 
 .modal-close-button:hover {
-  background-color: #e6e6e6;
+  opacity: 0.6;
 }
 
 .modal-close-button:focus-visible {
-  background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
-  outline: none;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .modal-close-button:active {
-  border: none;
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.3;
 }
 
 .modal-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
   margin: 0;
   margin-bottom: 63px;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .auth-form {
@@ -1714,7 +1708,7 @@ body {
   right: 19px;
 }
 
-.label-enter-date {
+.label-your-name {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-bottom: 7px;
@@ -1961,20 +1955,22 @@ body {
   outline: 3px solid #756257;
 }
 
+/* Шрифт во всех label */
 .auth-form label {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .auth-form input {
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  border: none;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  /* border: 2px solid #ff3d3d; */
 }
 
 .auth-form input:hover {
@@ -1992,10 +1988,6 @@ body {
 }
 
 .auth-form input::placeholder {
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
+
   opacity: 0.5;
 }
