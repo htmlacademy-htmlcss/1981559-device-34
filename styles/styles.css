@@ -694,6 +694,7 @@ body {
 .slider-image {
   grid-column: 1 / 2;
   z-index: 0;
+  margin-top: -16px;
 }
 
 /* Кнопки слайдера */
@@ -703,11 +704,13 @@ body {
 
 .slider-controls {
   position: absolute;
-  top: 245px;
+  top: 224px;
   display: flex;
   justify-content: space-between;
-  width: 560px;
+  width: 530px;
   transform: translateY(-50%);
+  z-index: 1;
+  margin-left: 30px;
 }
 
 .slider-button {
@@ -744,7 +747,7 @@ body {
 
 .description-title {
   margin: 0;
-  margin-top: 100px;
+  margin-top: 106px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -753,7 +756,7 @@ body {
 
 .description-text {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .button-and-points {
