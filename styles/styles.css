@@ -672,7 +672,7 @@ body {
 .slider-group-background {
   background-color: #ffe17f;
   width: 1160px;
-  min-height: 125px;
+  min-height: 134px;
   position: absolute;
 }
 
@@ -685,8 +685,8 @@ body {
   line-height: 30px;
   color: #ffffff;
   position: absolute;
-  right: 50px;
-  bottom: 40px;
+  right: 48px;
+  bottom: 37px;
   cursor: default;
 }
 
