@@ -1730,7 +1730,7 @@ body {
   grid-column: 1/2;
   grid-row: 3/4;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1762,18 +1762,28 @@ body {
   color: #ff3d3d;
 }
 
+.transport-text {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin-bottom: 13px;
+}
+
+.transport-text-field {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  padding: 18px 20px;
+}
+
 /* на этом моменте закончена правка */
 
 .label-adults {
   grid-column: 1/2;
-  grid-row: 5/6;
   display: none;
 }
 
 .adults-button {
   grid-column: 2/3;
   grid-row: 5/6;
-  display: none;
 }
 
 .decrease-button {
@@ -1940,7 +1950,6 @@ body {
   grid-row: 5/6;
   text-align: center;
   padding: 15px 46px;
-  display: none;
 }
 
 .children-button {
@@ -1976,6 +1985,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 .auth-form input {
