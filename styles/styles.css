@@ -1627,11 +1627,12 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 62px 70px;
   background-color: #ffffff;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   border: 10px solid #000000;
   width: 920px;
+  min-height: 568px;
   box-sizing: border-box;
 }
 
@@ -1639,8 +1640,8 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 84px;
-  right: 80px;
+  top: 74px;
+  right: 70px;
   width: 26px;
   height: 26px;
   border: none;
@@ -1674,15 +1675,15 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 35px;
 }
 
 .auth-form {
   display: grid;
   align-items: center;
-  grid-template-columns: 155px 133px 1fr;
+  grid-template-columns: 360px 133px 1fr;
   position: relative;
-  gap: 20px;
+  column-gap: 40px;
 }
 
 .auth-form::before {
@@ -1712,7 +1713,8 @@ body {
 .label-your-name {
   grid-column: 1/2;
   grid-row: 1/2;
-  margin-bottom: 7px;
+  margin-bottom: 13px;
+  margin-top: 6px;
 }
 
 .auth-enter-field {
@@ -1738,6 +1740,8 @@ body {
   grid-column: 2/-1;
   grid-row: 1/2;
   margin-bottom: 4px;
+  align-self: start;
+  margin-top: 6px;
 }
 
 .enter-e-mail {
