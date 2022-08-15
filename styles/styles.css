@@ -1720,11 +1720,10 @@ body {
 .auth-enter-field {
   grid-column: 1/2;
   grid-row: 2/3;
-  padding: 15px 19px;
-  margin-bottom: 7px;
+  padding: 18px 19px;
   background-image: url("/images/modal-window/your-name-icon.svg");
   background-repeat: no-repeat;
-  background-position: top 24px right 21px;
+  background-position: top 23px right 19px;
 }
 
 .input-support {
@@ -1747,8 +1746,7 @@ body {
 .enter-e-mail {
   grid-column: 2/-1;
   grid-row: 2/3;
-  padding: 15px 19px;
-  margin-bottom: 7px;
+  padding: 19px 19px;
   background-image: url("/images/modal-window/e-mail-icon.svg");
   background-repeat: no-repeat;
   background-position: top 24px right 21px;
