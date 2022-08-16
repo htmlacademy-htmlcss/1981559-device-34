@@ -1723,7 +1723,7 @@ body {
   padding: 18px 19px;
   background-image: url("/images/modal-window/your-name-icon.svg");
   background-repeat: no-repeat;
-  background-position: top 23px right 19px;
+  background-position: top 22px right 19px;
 }
 
 .input-support {
@@ -1749,7 +1749,7 @@ body {
   padding: 19px 19px;
   background-image: url("/images/modal-window/e-mail-icon.svg");
   background-repeat: no-repeat;
-  background-position: top 24px right 21px;
+  background-position: top 23px right 18px;
 }
 
 .e-mail-error {
@@ -1759,7 +1759,8 @@ body {
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 20px;
-  color: #ff3d3d;
+  color: #000000;
+  align-self: start;
 }
 
 .transport-text {
@@ -1962,7 +1963,6 @@ body {
   background-color: #f0f0f0;
   border: 2px solid #f0f0f0;
   box-sizing: border-box;
-  /* border: 2px solid #ff3d3d; */
 }
 
 .auth-form input:hover {
@@ -1977,4 +1977,12 @@ body {
 
 .auth-form input::placeholder {
   opacity: 0.5;
+}
+
+.auth-form input:invalid {
+  border: 2px solid #ff3d3d;
+}
+
+.auth-form input:invalid + .e-mail-error {
+  color: #ff3d3d;
 }
