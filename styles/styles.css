@@ -1812,21 +1812,19 @@ body {
   opacity: 0.6;
 }
 
-.increase-button:focus,
-.decrease-button:focus {
+.increase-button:focus-visible,
+.decrease-button:focus-visible {
   outline: 2px solid #af4fff;
-  outline-offset: 2px;
   opacity: 1;
 }
 
-.increase-button:active,
-.decrease-button:active {
-  opacity: 0.3;
+.increase-button:active.increase-button::before,
+.increase-button:active.increase-button::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.increase-button:disabled,
-.decrease-button:disabled {
-  opacity: 0.3;
+.decrease-button:active.decrease-button::before {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .increase-button::before {
