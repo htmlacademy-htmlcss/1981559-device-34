@@ -1627,7 +1627,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 62px 70px;
+  padding: 62px 70px 60px;
   background-color: #ffffff;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   border: 10px solid #000000;
@@ -1951,16 +1951,12 @@ body {
   display: none;
 }
 
-.auth-form .blue-button {
+.modal-button {
+  grid-row: 6/7;
   grid-column: 1/-1;
-  font-size: 20px;
-  line-height: 36px;
-  padding: 12px 26px;
-  margin-top: 40px;
-}
-
-.auth-form .blue-button:focus-visible {
-  outline: 3px solid #756257;
+  justify-self: start;
+  min-width: 203px;
+  margin-top: 43px;
 }
 
 /* Шрифт во всех label */
