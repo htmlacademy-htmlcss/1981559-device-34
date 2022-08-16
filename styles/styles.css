@@ -1931,6 +1931,10 @@ body {
   width: 60px;
 }
 
+.auth-amount-field:focus-visible {
+  z-index: 3;
+}
+
 .amount-button {
   grid-column: 3/4;
   grid-row: 5/6;
