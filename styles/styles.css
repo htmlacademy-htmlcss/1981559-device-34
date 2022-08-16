@@ -1871,17 +1871,16 @@ body {
 }
 
 .tooltip-text {
-  background-color: #333333;
+  background-color: #000000;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  padding: 21px 18px 26px 22px;
-  border-radius: 8px;
-  width: 256px;
+  padding: 19px 17px 21px 19px;
+  width: 200px;
   box-sizing: border-box;
   position: absolute;
-  top: 100%;
-  right: 12px;
+  top: 21px;
+  right: 65px;
   transform: translate(50%, 15px);
   display: none;
 }
@@ -1889,13 +1888,13 @@ body {
 .tooltip-text::after {
   content: "";
   position: absolute;
-  top: -8px;
-  left: 50%;
+  top: -5px;
+  right: 33px;
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 9px solid #333333;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 6px solid #000000;
   transform: translate(-50%);
 }
 
