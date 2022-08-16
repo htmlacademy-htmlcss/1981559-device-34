@@ -1807,13 +1807,16 @@ body {
   position: relative;
 }
 
-.increase-button:hover,
-.decrease-button:hover {
-  opacity: 0.6;
+.increase-button:hover.increase-button::before,
+.increase-button:hover.increase-button::after {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.increase-button:focus-visible,
-.decrease-button:focus-visible {
+.decrease-button:hover.decrease-button::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.amount-button:focus-visible {
   outline: 2px solid #af4fff;
   opacity: 1;
 }
@@ -1919,7 +1922,9 @@ body {
   grid-column: 3/4;
   grid-row: 5/6;
   text-align: center;
-  padding: 18px 46px;
+  justify-self: center;
+  height: 60px;
+  width: 60px;
 }
 
 .amount-button {
