@@ -1851,6 +1851,10 @@ body {
   transform: rotate(90deg);
 }
 
+.amount-button:disabled {
+  opacity: 0.1;
+}
+
 .amount-container {
   grid-column: 3/4;
   grid-row: 4/5;
