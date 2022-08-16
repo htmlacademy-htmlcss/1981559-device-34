@@ -1620,8 +1620,9 @@ body {
   z-index: 2;
 }
 
+/* Закрытие модального окна */
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1678,6 +1679,7 @@ body {
   margin-bottom: 35px;
 }
 
+/* Сетка содержимого модального окна */
 .auth-form {
   display: grid;
   align-items: center;
@@ -1775,8 +1777,6 @@ body {
   padding: 18px 20px;
 }
 
-/* на этом моменте закончена правка */
-
 .decrease-button {
   width: 60px;
   height: 60px;
@@ -1806,6 +1806,13 @@ body {
   justify-self: end;
   position: relative;
 }
+
+.amount-button {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+/* Состояния кнопок плюс и минус */
 
 .increase-button:hover.increase-button::before,
 .increase-button:hover.increase-button::after {
@@ -1854,6 +1861,8 @@ body {
 .amount-button:disabled {
   opacity: 0.1;
 }
+
+/* Блок количества вещей */
 
 .amount-container {
   grid-column: 3/4;
@@ -1935,11 +1944,6 @@ body {
   z-index: 3;
 }
 
-.amount-button {
-  grid-column: 3/4;
-  grid-row: 5/6;
-}
-
 /* Убираю стрелки инпута количества */
 .auth-amount-field[type="number"] {
   -webkit-appearance: textfield;
@@ -1998,3 +2002,4 @@ body {
 .auth-form input:invalid + .e-mail-error {
   color: #ff3d3d;
 }
+
