@@ -285,6 +285,7 @@ body {
 
 .compare-item {
   grid-column: 3 / 4;
+  margin-left: -7px;
 }
 
 /* Корзина */
@@ -296,6 +297,7 @@ body {
 .recycle-bin-item {
   grid-column: 4 / 5;
   position: relative;
+  margin-left: -6px;
 }
 
 /* Количество покупок */
@@ -475,7 +477,7 @@ body {
 
 /* Навигация */
 .navigation {
-  margin: 30px 60px 0 60px;
+  margin: 31px 60px 0 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
