@@ -2034,3 +2034,62 @@ body {
 .auth-amount-field.modal-input:focus-visible {
   outline-offset: 0;
 }
+
+/* Стилизация каталога */
+
+/* Заголовок */
+.selfie-monopods-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+/* Центровка внутреннего хедера */
+.inner-header {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 58px;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.breadcrumbs-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  background-image: url("/images/breadcrumbs-arrow.svg");
+  width: 4px;
+  height: 7px;
+  content: "";
+  position: absolute;
+  right: -23px;
+  top: 10px;
+}
+
+.breadcrumbs-item:last-child::after {
+  background-image: none;
+}
