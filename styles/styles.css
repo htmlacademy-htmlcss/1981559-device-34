@@ -32,7 +32,7 @@ img {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -54,6 +54,10 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Центровка страницы */
