@@ -2099,3 +2099,13 @@ body {
 .breadcrumbs-item:last-child::after {
   background-image: none;
 }
+
+/* Секция каталога моноподов */
+.catalog-monopods-section {
+  background-color: #f0f0f0;
+}
+
+.catalog-centerer {
+  margin: 0 auto;
+  width: 1160px;
+}
