@@ -1622,7 +1622,7 @@ body {
 
 /* Закрытие модального окна */
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
