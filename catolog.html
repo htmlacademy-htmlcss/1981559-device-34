@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+        <!-- Центровка страницы -->
+        <div class="page-container">
+          <!-- Шапка -->
+          <header class="main-header">
+
+            <!-- Лого -->
+            <a class="navigation-logo" href="#">
+              <img class="logo" src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
+            </a>
+
+            <!-- Поиск -->
+            <div class="user-container">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="search-field">Поиск</label>
+                <input class="search-field" placeholder="Поиск по сайту" value="Текст поиска" type="text"
+                  name="search-field" id="search-field" required="">
+                <div class="for-focus"></div>
+              </form>
+              <button class="search-button" type="submit">
+                Найти
+              </button>
+
+              <ul class="user-buttons-container">
+                <li class="login-item">
+                  <button class="user-button login-button" type="button">Коля Петухов</button>
+                </li>
+                <li class="log-out">
+                  <button class="user-button log-out-button" type="button">Выйти</button>
+                </li>
+                <li class="compare-item">
+                  <button class="user-button compare-button" type="button">Сравнить</button>
+                </li>
+                <li class="recycle-bin-item">
+                  <button class="user-button recycle-bin-button" type="button">
+                    <span class="number-of-goods">2</span>
+                    Корзина
+                  </button>
+                  <div class="popover">
+                    <div class="popover-content">
+                      <ul class="cart-items-list">
+                        <li class="cart-item">
+                          <a class="cart-link" href="">
+                            <img class="cart-image" src="images/header/cart-items-images/amateur-selfie-stick.jpg"
+                              width="39" height="43" alt="Любительская селфи-палка.">
+                            <p class="cart-item-name">Любительская селфи-палка</p>
+                          </a>
+                          <button class="delete-cart-item" type="button">
+                            <svg class="delete-button-svg" width="10" height="10" viewBox="0 0 10 11" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                fill="white" />
+                            </svg>
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                        </li>
+                        <li class="cart-item">
+                          <a class="cart-link" href="">
+                            <img class="cart-image" src="images/header/cart-items-images/professional-selfie-stick.jpg"
+                              width="39" height="43" alt="Любительская селфи-палка.">
+                            <p class="cart-item-name">Профессиональная селфи-палка</p>
+                          </a>
+                          <button class="delete-cart-item" type="button">
+                            <svg class="delete-button-svg" width="10" height="10" viewBox="0 0 10 11" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                fill="white" />
+                            </svg>
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <ul class="popover-number-of-goods">
+                        <li class="amount-of-goods">Товаров: 2</li>
+                        <li class="total-price">Сумма: 2000 ₽</li>
+                      </ul>
+                      <a class="open-cart-item" href="#">Открыть корзину</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Навигация -->
+            <nav class="navigation">
+              <!-- Раскрывающиеся меню каталога товаров -->
+              <div class="catalog-button-wrapper">
+                <button class="header-catalog-button catalog-button-list" type="button">
+                  Каталог товаров
+                  <span class="decorative-plus-sign"></span>
+                </button>
+                <div class="catalog-popover">
+                  <ul class="catalog-column">
+                    <li class="catalog-column-row">
+                      <a class="catalog-column-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="catalog-column-row">
+                      <a class="catalog-column-link" href="#">Моноподы для cелфи</a>
+                    </li>
+                    <li class="catalog-column-row">
+                      <a class="catalog-column-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="catalog-column">
+                    <li class="catalog-column-row">
+                      <a class="catalog-column-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="catalog-column-row">
+                      <a class="catalog-column-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="catalog-column">
+                    <li class="catalog-column-row">
+                      <a class="catalog-column-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- О заказе -->
+              <ul class="about-the-product">
+                <li class="header-catalog-button">
+                  <a class="product-link" href="#">Доставка</a>
+                </li>
+                <li class="header-catalog-button">
+                  <a class="product-link" href="#">Гарантия</a>
+                </li>
+                <li class="header-catalog-button">
+                  <a class="product-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+  </body>
+
+</html>
