@@ -272,6 +272,8 @@ body {
 
 .login-item {
   grid-column: 1 / 2;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Сравнить */
