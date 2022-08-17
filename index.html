@@ -546,17 +546,17 @@
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <label class="label-your-name" for="your-e-mail-input">Ваше имя:</label>
-          <input class="auth-enter-field" type="text" id="your-e-mail-input" name="your-e-mail-input" placeholder="Введите имя">
+          <input class="auth-enter-field modal-input" type="text" id="your-e-mail-input" name="your-e-mail-input" placeholder="Введите имя">
           <p class="input-support">Добавьте имя</p>
 
           <label class="label-your-e-mail" for="enter-e-mail-field">Ваш e-mail:</label>
-          <input class="enter-e-mail" type="email" id="enter-e-mail-field" name="enter-e-mail-field" value="почта"
+          <input class="enter-e-mail modal-input" type="email" id="enter-e-mail-field" name="enter-e-mail-field" value="почта"
             placeholder="Введите e-mail">
 
           <p class="e-mail-error">Забавный у&nbsp;вас адрес</p>
 
           <label class="transport-text" for="transport-text-input">Что нужно привезти:</label>
-          <input class="transport-text-field" type="text" id="transport-text-input" name="transport-text-input" placeholder="В&nbsp;свободной форме">
+          <input class="transport-text-field modal-input" type="text" id="transport-text-input" name="transport-text-input" placeholder="В&nbsp;свободной форме">
 
           <div class="amount-container">
             <label class="label-amount" for="auth-amount">Количество:</label>
@@ -566,8 +566,10 @@
                 к&nbsp;провозу багажа.</span>
             </span>
           </div>
-          
-          <input class="auth-amount-field" type="number" id="auth-amount" name="auth-amount" value="0" min="1">
+
+
+          <input class="auth-amount-field modal-input" type="number" id="auth-amount" name="auth-amount" value="1" min="1">
+          <div class="for-background-style"></div>
           <button class="decrease-button amount-button" type="button"></button>
           <button class="increase-button amount-button" type="button"></button>
           <button class="button-with-strip modal-button" type="submit">Отправить</button>

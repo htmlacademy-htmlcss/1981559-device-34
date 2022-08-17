@@ -1793,8 +1793,8 @@ body {
   height: 2px;
   background-color: #000000;
   position: absolute;
-  left: 23px;
-  top: 30px;
+  left: 21px;
+  top: 28px;
 }
 
 .increase-button {
@@ -1810,6 +1810,7 @@ body {
 .amount-button {
   grid-column: 3/4;
   grid-row: 5/6;
+  margin: 2px;
 }
 
 /* Состояния кнопок плюс и минус */
@@ -1843,8 +1844,8 @@ body {
   height: 2px;
   background-color: #000000;
   position: absolute;
-  left: 23px;
-  top: 30px;
+  left: 25px;
+  top: 28px;
 }
 
 .increase-button::after {
@@ -1853,8 +1854,8 @@ body {
   height: 2px;
   background-color: #000000;
   position: absolute;
-  left: 23px;
-  top: 30px;
+  left: 25px;
+  top: 28px;
   transform: rotate(90deg);
 }
 
@@ -1969,7 +1970,7 @@ body {
   letter-spacing: -0.02em;
 }
 
-.auth-form input {
+.auth-form .modal-input {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1979,24 +1980,53 @@ body {
   box-sizing: border-box;
 }
 
-.auth-form input:hover {
+.auth-form .modal-input:hover {
   background-color: #dcdcdc;
   border: 2px solid #dcdcdc;
 }
 
-.auth-form input:focus-visible {
+.auth-form .modal-input:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.auth-form input::placeholder {
+.auth-form .modal-input::placeholder {
   opacity: 0.5;
 }
 
-.auth-form input:invalid {
+.auth-form .modal-input:invalid {
   border: 2px solid #ff3d3d;
 }
 
-.auth-form input:invalid + .e-mail-error {
+.auth-form .modal-input:invalid + .e-mail-error {
   color: #ff3d3d;
+}
+
+/* Стилизация контейнера "количество" */
+.auth-amount-field.modal-input {
+  background-color: transparent;
+  border: transparent;
+  z-index: 1;
+}
+
+.auth-amount-field:hover.modal-input {
+  background-color: transparent;
+  border: transparent;
+}
+
+.for-background-style {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  background-color: #f0f0f0;
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+}
+
+.auth-amount-field:hover + .for-background-style {
+  background-color: #dcdcdc;
+}
+
+.auth-amount-field.modal-input:focus-visible {
+  outline-offset: 0;
 }
