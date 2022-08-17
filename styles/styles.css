@@ -1622,7 +1622,7 @@ body {
 
 /* Закрытие модального окна */
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -1936,12 +1936,13 @@ body {
   grid-row: 5/6;
   text-align: center;
   justify-self: center;
-  height: 60px;
-  width: 60px;
+  width: 100%;
+  height: 100%;
+  padding: 0 74px;
 }
 
-.auth-amount-field:focus-visible {
-  z-index: 3;
+.auth-amount-field:invalid {
+
 }
 
 /* Убираю стрелки инпута количества */
@@ -2002,4 +2003,3 @@ body {
 .auth-form input:invalid + .e-mail-error {
   color: #ff3d3d;
 }
-
