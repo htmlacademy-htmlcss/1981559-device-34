@@ -1941,8 +1941,8 @@ body {
   padding: 0 74px;
 }
 
-.auth-amount-field:invalid {
-
+.auth-amount-field:invalid ~ .amount-button {
+  margin: 2px;
 }
 
 /* Убираю стрелки инпута количества */
