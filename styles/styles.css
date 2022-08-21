@@ -2137,6 +2137,7 @@ body {
   width: 333px;
 }
 
+/* Range */
 .range-scale {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -2187,4 +2188,10 @@ body {
 .toggle-max {
   top: -8px;
   right: 0;
+}
+
+/* Инпут стоимости */
+.range-input {
+  font-family: "Rubik", sans-serif;
+
 }
