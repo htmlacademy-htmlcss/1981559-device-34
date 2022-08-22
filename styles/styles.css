@@ -2229,3 +2229,26 @@ input[type=number] {
   display: grid;
   grid-template-columns: repeat(2, 100px);
 }
+
+/* Контейнер чекбоксов выбора цвета */
+.color-checkbox-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.control-checkbox {
+  padding-left: 39px;
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
