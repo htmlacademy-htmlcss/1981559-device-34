@@ -2142,6 +2142,7 @@ body {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
   position: relative;
+  grid-column: span 2;
 }
 
 .range-bar {
@@ -2193,5 +2194,28 @@ body {
 /* Инпут стоимости */
 .range-input {
   font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.3;
+  background-color: transparent;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  border: none;
+}
 
+/* Убираем дефолтные стрелки */
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

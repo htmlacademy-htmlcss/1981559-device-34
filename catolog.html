@@ -8,202 +8,209 @@
   </head>
 
   <body>
-        <!-- Центровка страницы -->
-        <div class="page-container">
-          <!-- Шапка -->
-          <header class="main-header">
+    <!-- Центровка страницы -->
+    <div class="page-container">
+      <!-- Шапка -->
+      <header class="main-header">
 
-            <!-- Лого -->
-            <a class="navigation-logo" href="#">
-              <img class="logo" src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
-            </a>
+        <!-- Лого -->
+        <a class="navigation-logo" href="#">
+          <img class="logo" src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
+        </a>
 
-            <!-- Поиск -->
-            <div class="user-container">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden" for="search-field">Поиск</label>
-                <input class="search-field" placeholder="Поиск по сайту" value="Текст поиска" type="text"
-                  name="search-field" id="search-field" required="">
-                <div class="for-focus"></div>
-              </form>
-              <button class="search-button" type="submit">
-                Найти
+        <!-- Поиск -->
+        <div class="user-container">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-field">Поиск</label>
+            <input class="search-field" placeholder="Поиск по сайту" value="Текст поиска" type="text"
+              name="search-field" id="search-field" required="">
+            <div class="for-focus"></div>
+          </form>
+          <button class="search-button" type="submit">
+            Найти
+          </button>
+
+          <ul class="user-buttons-container">
+            <li class="login-item">
+              <button class="user-button login-button" type="button">Коля&nbsp;Петухов</button>
+            </li>
+            <li class="log-out">
+              <button class="user-button log-out-button" type="button">Выйти</button>
+            </li>
+            <li class="compare-item">
+              <button class="user-button compare-button" type="button">Сравнить</button>
+            </li>
+            <li class="recycle-bin-item">
+              <button class="user-button recycle-bin-button" type="button">
+                <span class="number-of-goods">2</span>
+                Корзина
               </button>
+              <div class="popover">
+                <div class="popover-content">
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <a class="cart-link" href="">
+                        <img class="cart-image" src="images/header/cart-items-images/amateur-selfie-stick.jpg"
+                          width="39" height="43" alt="Любительская селфи-палка.">
+                        <p class="cart-item-name">Любительская селфи-палка</p>
+                      </a>
+                      <button class="delete-cart-item" type="button">
+                        <svg class="delete-button-svg" width="10" height="10" viewBox="0 0 10 11" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                            fill="white" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-link" href="">
+                        <img class="cart-image" src="images/header/cart-items-images/professional-selfie-stick.jpg"
+                          width="39" height="43" alt="Любительская селфи-палка.">
+                        <p class="cart-item-name">Профессиональная селфи-палка</p>
+                      </a>
+                      <button class="delete-cart-item" type="button">
+                        <svg class="delete-button-svg" width="10" height="10" viewBox="0 0 10 11" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                            fill="white" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="popover-number-of-goods">
+                    <li class="amount-of-goods">Товаров: 2</li>
+                    <li class="total-price">Сумма: 2000 ₽</li>
+                  </ul>
+                  <a class="open-cart-item" href="#">Открыть корзину</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-              <ul class="user-buttons-container">
-                <li class="login-item">
-                  <button class="user-button login-button" type="button">Коля&nbsp;Петухов</button>
+        <!-- Навигация -->
+        <nav class="navigation">
+          <!-- Раскрывающиеся меню каталога товаров -->
+          <div class="catalog-button-wrapper">
+            <button class="header-catalog-button catalog-button-list" type="button">
+              Каталог товаров
+              <span class="decorative-plus-sign"></span>
+            </button>
+            <div class="catalog-popover">
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="log-out">
-                  <button class="user-button log-out-button" type="button">Выйти</button>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Моноподы для cелфи</a>
                 </li>
-                <li class="compare-item">
-                  <button class="user-button compare-button" type="button">Сравнить</button>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Экшн-камеры</a>
                 </li>
-                <li class="recycle-bin-item">
-                  <button class="user-button recycle-bin-button" type="button">
-                    <span class="number-of-goods">2</span>
-                    Корзина
-                  </button>
-                  <div class="popover">
-                    <div class="popover-content">
-                      <ul class="cart-items-list">
-                        <li class="cart-item">
-                          <a class="cart-link" href="">
-                            <img class="cart-image" src="images/header/cart-items-images/amateur-selfie-stick.jpg"
-                              width="39" height="43" alt="Любительская селфи-палка.">
-                            <p class="cart-item-name">Любительская селфи-палка</p>
-                          </a>
-                          <button class="delete-cart-item" type="button">
-                            <svg class="delete-button-svg" width="10" height="10" viewBox="0 0 10 11" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
-                                fill="white" />
-                            </svg>
-                            <span class="visually-hidden">Удалить из корзины</span>
-                          </button>
-                        </li>
-                        <li class="cart-item">
-                          <a class="cart-link" href="">
-                            <img class="cart-image" src="images/header/cart-items-images/professional-selfie-stick.jpg"
-                              width="39" height="43" alt="Любительская селфи-палка.">
-                            <p class="cart-item-name">Профессиональная селфи-палка</p>
-                          </a>
-                          <button class="delete-cart-item" type="button">
-                            <svg class="delete-button-svg" width="10" height="10" viewBox="0 0 10 11" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
-                                fill="white" />
-                            </svg>
-                            <span class="visually-hidden">Удалить из корзины</span>
-                          </button>
-                        </li>
-                      </ul>
-                      <ul class="popover-number-of-goods">
-                        <li class="amount-of-goods">Товаров: 2</li>
-                        <li class="total-price">Сумма: 2000 ₽</li>
-                      </ul>
-                      <a class="open-cart-item" href="#">Открыть корзину</a>
-                    </div>
-                  </div>
+              </ul>
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="catalog-column">
+                <li class="catalog-column-row">
+                  <a class="catalog-column-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </div>
+          </div>
 
-            <!-- Навигация -->
-            <nav class="navigation">
-              <!-- Раскрывающиеся меню каталога товаров -->
-              <div class="catalog-button-wrapper">
-                <button class="header-catalog-button catalog-button-list" type="button">
-                  Каталог товаров
-                  <span class="decorative-plus-sign"></span>
-                </button>
-                <div class="catalog-popover">
-                  <ul class="catalog-column">
-                    <li class="catalog-column-row">
-                      <a class="catalog-column-link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="catalog-column-row">
-                      <a class="catalog-column-link" href="#">Моноподы для cелфи</a>
-                    </li>
-                    <li class="catalog-column-row">
-                      <a class="catalog-column-link" href="#">Экшн-камеры</a>
-                    </li>
-                  </ul>
-                  <ul class="catalog-column">
-                    <li class="catalog-column-row">
-                      <a class="catalog-column-link" href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="catalog-column-row">
-                      <a class="catalog-column-link" href="#">Умные часы</a>
-                    </li>
-                  </ul>
-                  <ul class="catalog-column">
-                    <li class="catalog-column-row">
-                      <a class="catalog-column-link" href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
+          <!-- О заказе -->
+          <ul class="about-the-product">
+            <li class="header-catalog-button">
+              <a class="product-link" href="#">Доставка</a>
+            </li>
+            <li class="header-catalog-button">
+              <a class="product-link" href="#">Гарантия</a>
+            </li>
+            <li class="header-catalog-button">
+              <a class="product-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Основная часть страницы -->
+    <main class="main-catalog main-container">
+      <h1 class="visually-hidden">Страница каталога сайта</h1>
+
+      <!-- Внутренний хедер -->
+      <header class="inner-header">
+        <h2 class="selfie-monopods-title">Моноподы для селфи</h2>
+
+        <!-- Хлебные крошки -->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="catalog-monopods-section">
+        <h2 class="visually-hidden">Каталог моноподов для селфи</h2>
+        <div class="catalog-centerer">
+
+          <!-- Фильтр -->
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <h3 class="catalog-title">Фильтр:</h3>
+            <!-- Стоимость -->
+
+            <fieldset class="cost">
+              <legend class="filter-title">Стоимость</legend>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 119px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
                 </div>
               </div>
 
-              <!-- О заказе -->
-              <ul class="about-the-product">
-                <li class="header-catalog-button">
-                  <a class="product-link" href="#">Доставка</a>
-                </li>
-                <li class="header-catalog-button">
-                  <a class="product-link" href="#">Гарантия</a>
-                </li>
-                <li class="header-catalog-button">
-                  <a class="product-link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+              <!-- Левый инпут -->
+              <label class="catalog-filter-label-left">
+                <span class="visually-hidden">от</span>
+                <input class="range-input left-input" type="number" name="min-price" placeholder="от 0">
+              </label>
+              <!-- Правый инпут -->
+
+              <label class="catalog-filter-label-right">
+                <span class="visually-hidden">до</span>
+                <input class="range-input right-input" type="number" name="max-price" placeholder="до 5000">
+              </label>
+            </fieldset>
+
+
+          </form>
+
         </div>
+      </section>
 
-        <!-- Основная часть страницы -->
-        <main class="main-catalog main-container">
-          <h1 class="visually-hidden">Страница каталога сайта</h1>
+    </main>
 
-          <!-- Внутренний хедер -->
-          <header class="inner-header">
-            <h2 class="selfie-monopods-title">Моноподы для селфи</h2>
-
-          <!-- Хлебные крошки -->
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Главная</a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
-              </li>
-            </ul>
-          </header>
-
-          <section class="catalog-monopods-section">
-            <h2 class="visually-hidden">Каталог моноподов для селфи</h2>
-            <div class="catalog-centerer">
-
-              <!-- Фильтр -->
-              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <h3 class="catalog-title">Фильтр:</h3>
-                <!-- Стоимость -->
-
-                <fieldset class="cost">
-                  <legend class="filter-title">Стоимость</legend>
-
-                  <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 119px">
-                      <button class="range-toggle toggle-min">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button class="range-toggle toggle-max">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Левый инпут -->
-                  <input class="range-input left-input" type="number" name="min-price" placeholder="от 0">
-                  <!-- Правый инпут -->
-                  <input class="range-input right-input" type="number" name="max-price" placeholder="до 5000">
-
-                </fieldset>
-
-              </form>
-
-            </div>
-          </section>
-
-        </main>
-
-            <!-- Футер -->
+    <!-- Футер -->
     <footer class="main-footer">
       <!-- Центровка футера -->
       <div class="page-footer-container">
@@ -300,7 +307,11 @@
       <div class="modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z" fill="#000"/></svg>
+          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"
+              fill="#000" />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
@@ -308,29 +319,33 @@
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <label class="label-your-name" for="your-e-mail-input">Ваше имя:</label>
-          <input class="auth-enter-field modal-input" type="text" id="your-e-mail-input" name="your-e-mail-input" placeholder="Введите имя">
+          <input class="auth-enter-field modal-input" type="text" id="your-e-mail-input" name="your-e-mail-input"
+            placeholder="Введите имя">
           <p class="input-support">Добавьте имя</p>
 
           <label class="label-your-e-mail" for="enter-e-mail-field">Ваш e-mail:</label>
-          <input class="enter-e-mail modal-input" type="email" id="enter-e-mail-field" name="enter-e-mail-field" value="почта"
-            placeholder="Введите e-mail">
+          <input class="enter-e-mail modal-input" type="email" id="enter-e-mail-field" name="enter-e-mail-field"
+            value="почта" placeholder="Введите e-mail">
 
           <p class="e-mail-error">Забавный у&nbsp;вас адрес</p>
 
           <label class="transport-text" for="transport-text-input">Что нужно привезти:</label>
-          <input class="transport-text-field modal-input" type="text" id="transport-text-input" name="transport-text-input" placeholder="В&nbsp;свободной форме">
+          <input class="transport-text-field modal-input" type="text" id="transport-text-input"
+            name="transport-text-input" placeholder="В&nbsp;свободной форме">
 
           <div class="amount-container">
             <label class="label-amount" for="auth-amount">Количество:</label>
             <span class="tooltip">
               <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+                сколько получится по требованиям
                 к&nbsp;провозу багажа.</span>
             </span>
           </div>
 
 
-          <input class="auth-amount-field modal-input" type="number" id="auth-amount" name="auth-amount" value="1" min="1">
+          <input class="auth-amount-field modal-input" type="number" id="auth-amount" name="auth-amount" value="1"
+            min="1">
           <div class="for-background-style"></div>
           <button class="decrease-button amount-button" type="button"></button>
           <button class="increase-button amount-button" type="button"></button>
