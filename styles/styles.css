@@ -2134,10 +2134,18 @@ body {
 
 /* Фильтр каталога */
 .catalog-filter {
-  width: 333px;
+  max-width: 320px;
+  padding: 60px;
+  box-sizing: border-box;
 }
 
 /* Range */
+.filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
 .range-scale {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -2216,6 +2224,8 @@ input[type=number] {
 }
 
 .cost {
+  width: 200px;
+  border: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 100px);
 }
