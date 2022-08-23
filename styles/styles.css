@@ -2298,3 +2298,8 @@ input[type=number] {
   outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
+
+/* Контейнер наличия Bluetooth */
+.bluetooth-radio {
+  border: none;
+}
