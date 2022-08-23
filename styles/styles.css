@@ -2254,15 +2254,15 @@ input[type=number] {
   cursor: pointer;
 }
 
-.control-checkbox:hover {
+.control-checkbox:hover, .bluetooth-label:hover {
   opacity: 0.6;
 }
 
-.control-checkbox:active {
+.control-checkbox:active, .bluetooth-label:active {
   opacity: 0.3;
 }
 
-.control-checkbox:disabled {
+.control-checkbox:disabled, .bluetooth-label:disabled {
   opacity: 0.1;
 }
 
@@ -2302,4 +2302,59 @@ input[type=number] {
 /* Контейнер наличия Bluetooth */
 .bluetooth-radio {
   border: none;
+}
+
+.bluetooth-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bluetooth-item {
+  margin-bottom: 20px;
+}
+
+.bluetooth-label {
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+}
+
+.bluetooth-input[type="radio"]:checked + .control-mark-radio {
+  border-color: #000000;
+}
+
+.bluetooth-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 3px solid black;
+  border-radius: 50%;
+  background-color: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.bluetooth-input[type="radio"]:focus-visible + .control-mark-radio::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
 }
