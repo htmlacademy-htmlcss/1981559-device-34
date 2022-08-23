@@ -2553,6 +2553,7 @@ input[type=number] {
   flex-wrap: wrap;
   justify-content: space-between;
   text-decoration: none;
+  position: relative;
 }
 
 .product-title {
@@ -2570,4 +2571,17 @@ input[type=number] {
   line-height: 21px;
   color: #444444;
   max-width: 90px;
+}
+
+.result-link:hover :is(.product-picture, .product-title) {
+  opacity: 0.6;
+}
+
+.product-button {
+  position: absolute;
+  width: 210px;
+  text-align: center;
+  color: #000000;
+  top: 171px;
+  left: 77px
 }
