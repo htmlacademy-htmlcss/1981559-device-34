@@ -2626,3 +2626,33 @@ input[type=number] {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
+
+/* Кнопка "Загрузить еще" после карточек */
+.show-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 44px 40px;
+  padding: 18px;
+  background-color: transparent;
+  border: 3px solid #e5e6e5;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  border-color: #000000;
+}
+
+.show-more:active {
+  border-color: #000000;
+  opacity: 0.3;
+}
+
+.show-more:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
