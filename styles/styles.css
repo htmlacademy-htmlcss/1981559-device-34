@@ -2537,3 +2537,37 @@ input[type=number] {
   grid-row: 2 / 3;
   background-color: #ffffff;
 }
+
+.result-list {
+  margin: 70px 40px 44px 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.result-item {
+  width: 360px;
+}
+
+.result-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.product-title {
+  margin: 0;
+  margin-top: 35px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  max-width: 260px;
+}
+
+.product-price {
+  margin-top: 34px;
+  align-self: flex-start;
+  line-height: 21px;
+  color: #444444;
+  max-width: 90px;
+}
