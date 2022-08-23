@@ -2237,11 +2237,31 @@ input[type=number] {
   padding: 0;
 }
 
+.color-checkbox-item {
+  margin-bottom: 20px;
+}
+
 .control-checkbox {
+  font-size: 16px;
+  line-height: 19px;
   padding-left: 39px;
   position: relative;
   display: block;
+  cursor: pointer;
 }
+
+.control-checkbox:hover {
+  opacity: 0.6;
+}
+
+.control-checkbox:active {
+  opacity: 0.3;
+}
+
+.control-checkbox:disabled {
+  opacity: 0.1;
+}
+
 
 .control-mark {
   position: absolute;
@@ -2249,6 +2269,25 @@ input[type=number] {
   left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #cccccc;
   border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.control-input[type="checkbox"]:focus-visible + .control-mark::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
 }
