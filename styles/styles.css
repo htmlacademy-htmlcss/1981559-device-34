@@ -2364,11 +2364,22 @@ input[type=number] {
   padding: 0;
   margin-top: 28px;
   border: none;
+  position: relative;
+}
+
+.bluetooth-radio::before {
+  position: absolute;
+  top: -33px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
 }
 
 .bluetooth-list {
   list-style-type: none;
   margin: 0;
+  margin-top: 21px;
   padding: 0;
 }
 
@@ -2389,8 +2400,8 @@ input[type=number] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #cccccc;
   border-radius: 50%;
 }
@@ -2401,8 +2412,8 @@ input[type=number] {
 
 .bluetooth-input[type="radio"]:checked + .control-mark-radio::before {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 2px;
+  height: 2px;
   border: 3px solid black;
   border-radius: 50%;
   background-color: #000000;
@@ -2423,7 +2434,8 @@ input[type=number] {
 
 /* Кнопка фильтра */
 .filter-button {
-  min-width: 210px;
+  margin-top: 17px;
+  width: 222px;
 }
 
 /* Сортировка */
@@ -2433,6 +2445,11 @@ input[type=number] {
   justify-content: space-between;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+
+.sorting-column .catalog-title {
+  margin-top: 26px;
+  margin-left: 40px;
 }
 
 .select-control {
