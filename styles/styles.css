@@ -2371,7 +2371,38 @@ input[type=number] {
 
 /* Сортировка */
 .sorting-column {
-
+  display: flex;
+  align-items: flex-start;
 }
 
+.select-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 142px;
+  background-image: url("/images/selector-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
 
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
+}
