@@ -2298,13 +2298,13 @@ input[type=number] {
 }
 
 .color-checkbox-item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .control-checkbox {
   font-size: 16px;
   line-height: 19px;
-  padding-left: 39px;
+  padding-left: 36px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -2329,8 +2329,8 @@ input[type=number] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #cccccc;
   border-radius: 3px;
 }
@@ -2341,11 +2341,11 @@ input[type=number] {
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("/images/check-mark.svg");
+  width: 16px;
+  height: 16px;
+  background-image: url(/images/check-mark.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 3px 2px;
   content: "";
 }
 
@@ -2360,6 +2360,9 @@ input[type=number] {
 
 /* Контейнер наличия Bluetooth */
 .bluetooth-radio {
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
   border: none;
 }
 
