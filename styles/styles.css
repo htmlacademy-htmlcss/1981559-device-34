@@ -2542,6 +2542,10 @@ input[type=number] {
   margin: 70px 40px 44px 40px;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 44px;
 }
 
 .result-item {
