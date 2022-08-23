@@ -2213,11 +2213,16 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 15px;
   line-height: 18px;
-  opacity: 0.3;
   background-color: transparent;
   -webkit-appearance: textfield;
   appearance: textfield;
   border: none;
+  width: 60px;
+}
+
+.range-input::placeholder {
+  color: #000000;
+  opacity: 0.3;
 }
 
 /* Убираем дефолтные стрелки */
@@ -2228,13 +2233,17 @@ body {
   margin: 0;
 }
 
+.range-input:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 /* Да, они стоят криво в фигме */
-.catalog-filter-label-left {
+.label-left {
   margin-top: 9px;
   margin-left: -16px;
 }
 
-.catalog-filter-label-right {
+.label-right {
   margin-top: 4px;
   margin-left: -13px;
 }
