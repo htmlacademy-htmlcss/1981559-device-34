@@ -2406,3 +2406,38 @@ input[type=number] {
 .select-control:disabled {
   opacity: 0.1;
 }
+
+/* Отображение результата */
+.catalog-view {
+  display: flex;
+}
+
+.view-button-link {
+  display: block;
+  width: 11px;
+  height: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+.view-button-link svg {
+  color: #000000;
+  opacity: 0.2;
+  position: absolute;
+}
+
+.view-button-link:hover svg{
+  opacity: 0.5;
+}
+
+.view-button-link:active svg{
+  opacity: 1;
+}
+
+.view-button-link:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.downwards-view {
+  transform: rotate(180deg);
+}
