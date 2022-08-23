@@ -2123,6 +2123,7 @@ body {
   width: 1160px;
   display: grid;
   grid-template-columns: 320px 1fr;
+  grid-template-rows: 70px 1fr;
 }
 
 .catalog-title {
@@ -2138,7 +2139,8 @@ body {
 .catalog-filter {
   padding: 60px;
   box-sizing: border-box;
-  outline: 5px solid saddlebrown;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 }
 
 .filter-title {
@@ -2374,6 +2376,8 @@ input[type=number] {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 .select-control {
@@ -2432,11 +2436,11 @@ input[type=number] {
   transform: translate(-50%, -50%);
 }
 
-.view-button:hover svg{
+.view-button:hover svg {
   opacity: 0.5;
 }
 
-.view-button:active svg{
+.view-button:active svg {
   opacity: 1;
 }
 
@@ -2446,4 +2450,11 @@ input[type=number] {
 
 .downwards-view {
   transform: rotate(180deg);
+}
+
+/* Результат поиска */
+.search-result {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #ffffff;
 }
