@@ -2139,13 +2139,13 @@ body {
   box-sizing: border-box;
 }
 
-/* Range */
 .filter-title {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
 }
 
+/* Range */
 .range-scale {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -2231,6 +2231,10 @@ input[type=number] {
 }
 
 /* Контейнер чекбоксов выбора цвета */
+.color-checkbox {
+  border: none;
+}
+
 .color-checkbox-container {
   list-style-type: none;
   margin: 0;
@@ -2261,7 +2265,6 @@ input[type=number] {
 .control-checkbox:disabled {
   opacity: 0.1;
 }
-
 
 .control-mark {
   position: absolute;
