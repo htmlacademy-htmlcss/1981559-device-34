@@ -2254,15 +2254,18 @@ input[type=number] {
   cursor: pointer;
 }
 
-.control-checkbox:hover, .bluetooth-label:hover {
+.control-checkbox:hover,
+.bluetooth-label:hover {
   opacity: 0.6;
 }
 
-.control-checkbox:active, .bluetooth-label:active {
+.control-checkbox:active,
+.bluetooth-label:active {
   opacity: 0.3;
 }
 
-.control-checkbox:disabled, .bluetooth-label:disabled {
+.control-checkbox:disabled,
+.bluetooth-label:disabled {
   opacity: 0.1;
 }
 
@@ -2357,4 +2360,9 @@ input[type=number] {
   content: "";
   outline: 2px solid #af4fff;
   outline-offset: 4px;
+}
+
+/* Кнопка фильтра */
+.filter-button {
+  min-width: 210px;
 }

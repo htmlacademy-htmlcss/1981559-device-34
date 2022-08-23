@@ -180,10 +180,10 @@
 
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 119px">
-                  <button class="range-toggle toggle-min">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
@@ -251,7 +251,8 @@
               <ul class="bluetooth-list">
                 <li class="bluetooth-item">
                   <label class="bluetooth-label">
-                    <input class="visually-hidden bluetooth-input" type="radio" name="bluetooth-presence" value="yes" checked>
+                    <input class="visually-hidden bluetooth-input" type="radio" name="bluetooth-presence" value="yes"
+                      checked>
                     <span class="control-mark-radio"></span>
                     Есть
                   </label>
@@ -264,10 +265,9 @@
                   </label>
                 </li>
               </ul>
-
-
-
             </fieldset>
+
+            <button class="button-with-strip filter-button" type="button">Показать</button>
 
           </form>
 
@@ -371,7 +371,7 @@
     <!-- Модальное окно -->
     <div class="modal-container modal-container-close">
       <div class="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
