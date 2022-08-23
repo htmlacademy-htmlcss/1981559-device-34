@@ -2275,11 +2275,25 @@ input[type=number] {
 /* Контейнер чекбоксов выбора цвета */
 .color-checkbox {
   border: none;
+  margin: 0;
+  margin-top: 42px;
+  padding: 0;
+  position: relative;
+}
+
+.color-checkbox::before {
+  position: absolute;
+  top: -35px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
 }
 
 .color-checkbox-container {
   list-style-type: none;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
 }
 
