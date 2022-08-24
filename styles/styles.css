@@ -101,6 +101,7 @@ body {
 
 .navigation-logo:focus-visible {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 /* Хедер главной страницы */
@@ -1465,13 +1466,26 @@ body {
 /* Первый контейнер */
 .first-container {
   grid-column: 1 / 2;
-  background-image: url("/images/footer/footer-logo.svg");
-  background-repeat: no-repeat;
   max-width: 240px;
 }
 
+/* Логотип сайта в футере */
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-logo:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+
 .footer-text {
-  margin-top: 71px;
+  margin-top: 26px;
   padding-bottom: 71px;
   font-style: normal;
   font-size: 16px;
