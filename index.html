@@ -548,9 +548,13 @@
     <!-- Модальное окно -->
     <div class="modal-container modal-container-close">
       <div class="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
-          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z" fill="#000"/></svg>
+          <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"
+              fill="#000" />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
@@ -558,37 +562,42 @@
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <label class="label-your-name" for="your-e-mail-input">Ваше имя:</label>
-          <input class="auth-enter-field modal-input" type="text" id="your-e-mail-input" name="your-e-mail-input" placeholder="Введите имя">
+          <input class="auth-enter-field modal-input" type="text" id="your-e-mail-input" name="your-e-mail-input"
+            placeholder="Введите имя">
           <p class="input-support">Добавьте имя</p>
 
           <label class="label-your-e-mail" for="enter-e-mail-field">Ваш e-mail:</label>
-          <input class="enter-e-mail modal-input" type="email" id="enter-e-mail-field" name="enter-e-mail-field" value="почта"
-            placeholder="Введите e-mail">
+          <input class="enter-e-mail modal-input" type="email" id="enter-e-mail-field" name="enter-e-mail-field"
+            value="почта" placeholder="Введите e-mail">
 
           <p class="e-mail-error">Забавный у&nbsp;вас адрес</p>
 
           <label class="transport-text" for="transport-text-input">Что нужно привезти:</label>
-          <input class="transport-text-field modal-input" type="text" id="transport-text-input" name="transport-text-input" placeholder="В&nbsp;свободной форме">
+          <input class="transport-text-field modal-input" type="text" id="transport-text-input"
+            name="transport-text-input" placeholder="В&nbsp;свободной форме">
 
-          <div class="amount-container">
-            <label class="label-amount" for="auth-amount">Количество:</label>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                к&nbsp;провозу багажа.</span>
-            </span>
+          <div class="general-amount-container">
+            <div class="amount-container">
+              <label for="auth-amount">Количество:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+                  сколько получится по требованиям
+                  к&nbsp;провозу багажа.</span>
+              </span>
+            </div>
+
+            <div class="input-amount-container">
+              <input class="auth-amount-field" type="number" id="auth-amount" name="auth-amount" value="1"
+                min="1">
+              <button class="decrease-button amount-button" type="button"></button>
+              <button class="increase-button amount-button" type="button"></button>
+            </div>
           </div>
-
-
-          <input class="auth-amount-field modal-input" type="number" id="auth-amount" name="auth-amount" value="1" min="1">
-          <div class="for-background-style"></div>
-          <button class="decrease-button amount-button" type="button"></button>
-          <button class="increase-button amount-button" type="button"></button>
           <button class="button-with-strip modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
-
   </body>
 
 </html>
