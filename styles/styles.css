@@ -1279,6 +1279,7 @@ body {
   margin-top: 30px;
   padding-left: 23px;
   padding-right: 21px;
+  max-width: 270px;
 }
 
 .contacts-subtitle {
