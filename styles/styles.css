@@ -1022,6 +1022,10 @@ body {
   position: relative;
 }
 
+.advantages-item .button-with-strip:not(.selected-advantages-button) {
+  max-width: 160px;
+}
+
 .advantages-item:first-of-type {
   margin-top: 64px;
 }
@@ -1154,6 +1158,8 @@ body {
   text-transform: uppercase;
   flex-grow: 1;
   padding: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   justify-content: center;
 }
@@ -1161,14 +1167,14 @@ body {
 .order-delivery-link::before {
   content: '';
   width: 125px;
-  height: 100px;
+  height: 100%;
   background-color: #ffe17f;
   position: absolute;
   left: 0;
   top: 0;
   background-image: url("/images/delivery-link/delivery-link-image.svg");
   background-repeat: no-repeat;
-  background-position: 39px 35px;
+  background-position: 39px 50%;
 }
 
 .order-delivery-link::after {
