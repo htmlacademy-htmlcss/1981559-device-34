@@ -1910,6 +1910,10 @@ body {
   grid-row: 4/6;
 }
 
+.input-amount-container {
+  height: 60px;
+}
+
 .amount-container {
   grid-column: 3/4;
   grid-row: 4/5;
