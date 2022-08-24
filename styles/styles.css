@@ -1824,7 +1824,8 @@ body {
   border: 0;
   cursor: pointer;
   z-index: 1;
-  position: relative;
+  position: absolute;
+  left: 0;
 }
 
 .decrease-button::before {
@@ -1844,8 +1845,9 @@ body {
   border: 0;
   cursor: pointer;
   justify-self: end;
-  position: relative;
+  position: absolute;
   z-index: 2;
+  right: 0;
 }
 
 .amount-button {
