@@ -2665,7 +2665,7 @@ input[type=number] {
   background-color: #ebebeb;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 78px;
   margin-right: 40px;
   margin-left: 40px;
@@ -2698,4 +2698,36 @@ input[type=number] {
 
 .pagination-list {
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(68, 68, 68, 0.3);
+  text-decoration: none;
+}
+
+.pagination-link-inner:hover {
+  color: #444444;
+}
+
+.pagination-link-inner:active {
+  color: rgba(68, 68, 68, 0.1);
+}
+
+.pagination-link-inner:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.present-page {
+  color: rgba(68, 68, 68, 0.6);
 }
