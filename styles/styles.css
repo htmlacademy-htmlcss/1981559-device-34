@@ -999,7 +999,7 @@ body {
 
 /* Декоративная полоска */
 .advantages-list::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 7px;
   height: 97%;
@@ -1165,7 +1165,7 @@ body {
 }
 
 .order-delivery-link::before {
-  content: '';
+  content: "";
   width: 125px;
   height: 100%;
   background-color: #ffe17f;
@@ -1178,7 +1178,7 @@ body {
 }
 
 .order-delivery-link::after {
-  content: '';
+  content: "";
   width: 40px;
   height: 40px;
   background-color: rgba(220, 220, 220, 0.5);
@@ -1263,7 +1263,7 @@ body {
 
 .delivery-company-name::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   background-color: #ffc700;
@@ -1508,7 +1508,7 @@ body {
 }
 
 .footer-text::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 7px;
