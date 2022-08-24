@@ -1905,6 +1905,10 @@ body {
 }
 
 /* Блок количества вещей */
+.general-amount-container {
+  grid-column: 3/4;
+  grid-row: 4/6;
+}
 
 .amount-container {
   grid-column: 3/4;
