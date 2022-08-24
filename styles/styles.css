@@ -56,6 +56,10 @@ body {
   overflow: hidden;
 }
 
+.main-index {
+  margin-top: -21px;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -292,6 +296,10 @@ body {
   margin-left: -7px;
 }
 
+.index-page .compare-item {
+  margin-left: 0;
+}
+
 /* Корзина */
 .recycle-bin-button {
   background-image: url("../images/header/recycle-bin-icon.svg");
@@ -302,6 +310,10 @@ body {
   grid-column: 4 / 5;
   position: relative;
   margin-left: -6px;
+}
+
+.index-page .recycle-bin-item {
+  margin-left: 0;
 }
 
 /* Количество покупок */
