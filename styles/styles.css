@@ -1821,7 +1821,6 @@ body {
   padding: 0;
   border: 0;
   cursor: pointer;
-  z-index: 1;
   left: 0;
 }
 
@@ -1841,7 +1840,6 @@ body {
   border: 0;
   cursor: pointer;
   justify-self: end;
-  z-index: 2;
   right: 0;
 }
 
@@ -1902,7 +1900,7 @@ body {
 }
 
 .amount-button:disabled {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 /* Блок количества вещей */
@@ -1954,7 +1952,7 @@ body {
   right: 65px;
   transform: translate(50%, 15px);
   display: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .tooltip-text::after {
@@ -1996,9 +1994,16 @@ body {
   height: 60px;
   padding: 0;
   border: none;
-  outline: 2px solid red;
 }
 
+.auth-amount-field:invalid {
+  outline: 2px solid #ff3d3d;
+}
+
+.auth-amount-field:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
 
 /* Убираю стрелки инпута количества */
 .auth-amount-field[type="number"] {
@@ -2057,11 +2062,6 @@ body {
 
 .auth-form .modal-input:invalid + .e-mail-error {
   color: #ff3d3d;
-}
-
-.auth-amount-field:hover.modal-input {
-  background-color: transparent;
-  border: transparent;
 }
 
 /* Стилизация каталога */
