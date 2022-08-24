@@ -511,22 +511,24 @@
           <input class="transport-text-field modal-input" type="text" id="transport-text-input"
             name="transport-text-input" placeholder="В&nbsp;свободной форме">
 
-          <div class="amount-container">
-            <label class="label-amount" for="auth-amount">Количество:</label>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
-                сколько получится по требованиям
-                к&nbsp;провозу багажа.</span>
-            </span>
+          <div>
+            <div class="amount-container">
+              <label class="label-amount" for="auth-amount">Количество:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+                  сколько получится по требованиям
+                  к&nbsp;провозу багажа.</span>
+              </span>
+            </div>
+
+            <div>
+              <input class="auth-amount-field modal-input" type="number" id="auth-amount" name="auth-amount" value="1"
+                min="1">
+              <button class="decrease-button amount-button" type="button"></button>
+              <button class="increase-button amount-button" type="button"></button>
+            </div>
           </div>
-
-
-          <input class="auth-amount-field modal-input" type="number" id="auth-amount" name="auth-amount" value="1"
-            min="1">
-          <div class="for-background-style"></div>
-          <button class="decrease-button amount-button" type="button"></button>
-          <button class="increase-button amount-button" type="button"></button>
           <button class="button-with-strip modal-button" type="submit">Отправить</button>
         </form>
       </div>

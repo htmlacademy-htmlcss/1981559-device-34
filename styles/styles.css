@@ -1662,7 +1662,7 @@ body {
 
 /* Закрытие модального окна */
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -2053,19 +2053,6 @@ body {
 .auth-amount-field:hover.modal-input {
   background-color: transparent;
   border: transparent;
-}
-
-.for-background-style {
-  grid-column: 3/4;
-  grid-row: 5/6;
-  background-color: #f0f0f0;
-  width: 60px;
-  height: 60px;
-  margin-left: 60px;
-}
-
-.auth-amount-field:hover + .for-background-style {
-  background-color: #dcdcdc;
 }
 
 .auth-amount-field.modal-input:focus-visible {
