@@ -842,15 +842,20 @@ body {
 
 .slider-pagination-item {
   list-style-type: none;
-  width: 8px;
-  height: 8px;
+}
+
+.slider-pagination-button {
   border: 2px solid #000000;
   border-radius: 50%;
   background-color: transparent;
+  cursor: pointer;
   padding: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
 }
 
-.slider-pagination-current {
+.selected-button-slider {
   background-color: #000000;
 }
 
