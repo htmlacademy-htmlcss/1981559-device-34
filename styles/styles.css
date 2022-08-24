@@ -1662,7 +1662,7 @@ body {
 
 /* Закрытие модального окна */
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1916,15 +1916,9 @@ body {
 .amount-container {
   grid-column: 3/4;
   grid-row: 4/5;
-  justify-self: start;
   display: flex;
   position: relative;
-  align-self: start;
   margin-bottom: 14px;
-}
-
-.label-amount {
-  margin-right: 35px;
 }
 
 .tooltip-toggle {
@@ -1972,8 +1966,12 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: 0;
+  right: 34px;
   top: -3px;
+}
+
+.tooltip-toggle:focus-visible {
+  outline: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -2021,7 +2019,7 @@ body {
   grid-column: 1/-1;
   justify-self: start;
   min-width: 203px;
-  margin-top: 39px;
+  margin-top: 42px;
 }
 
 /* Шрифт во всех label */
