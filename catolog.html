@@ -15,7 +15,7 @@
 
         <!-- Лого -->
         <a class="navigation-logo" href="index.html">
-          <img class="logo" src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
+          <img src="images/header/header-logo.svg" width="146" height="36" alt="Логотип сайта.">
         </a>
 
         <!-- Поиск -->
@@ -36,11 +36,11 @@
             <li class="login-item">
               <button class="user-button login-button" type="button">Коля&nbsp;Петухов</button>
             </li>
-            <li class="log-out">
-              <button class="user-button log-out-button" type="button">Выйти</button>
+            <li>
+              <button class="user-button" type="button">Выйти</button>
             </li>
             <li class="compare-item">
-              <button class="user-button compare-button" type="button">Сравнить</button>
+              <button class="user-button" type="button">Сравнить</button>
             </li>
             <li class="recycle-bin-item">
               <button class="user-button recycle-bin-button" type="button">
@@ -147,7 +147,7 @@
     </div>
 
     <!-- Основная часть страницы -->
-    <main class="main-catalog main-container">
+    <main class="main-container">
       <h1 class="visually-hidden">Страница каталога сайта</h1>
 
       <!-- Внутренний хедер -->
@@ -192,15 +192,15 @@
               </div>
 
               <!-- Левый инпут -->
-              <label class="catalog-filter-label label-left">
+              <label class="label-left">
                 <span class="visually-hidden">от</span>
-                <input class="range-input left-input" type="number" name="min-price" placeholder="от 0">
+                <input class="range-input" type="number" name="min-price" placeholder="от 0">
               </label>
               <!-- Правый инпут -->
 
-              <label class="catalog-filter-label label-right">
+              <label class="label-right">
                 <span class="visually-hidden">до</span>
-                <input class="range-input right-input" type="number" name="max-price" placeholder="до 5000">
+                <input class="range-input" type="number" name="max-price" placeholder="до 5000">
               </label>
             </fieldset>
 
@@ -363,7 +363,7 @@
             <!-- Пагинация -->
             <div class="pagination">
               <a class="pagination-link-button" href="#">Назад</a>
-              <div class="pagination-container">
+              <div>
                 <ul class="pagination-list">
                   <li class="pagination-item">
                     <a class="pagination-link-inner present-page" href="#">1</a>
@@ -399,7 +399,7 @@
         <!-- Первая колонка с адресом -->
         <div class="first-container">
           <a class="footer-logo" href="#">
-            <img class="logo" src="/images/footer/footer-logo.svg" width="146" height="36" alt="Логотип сайта.">
+            <img src="/images/footer/footer-logo.svg" width="146" height="36" alt="Логотип сайта.">
           </a>
           <address class="footer-text">Санкт-Петербург, набережная
             реки Карповки, 5, литера&nbsp;П.
@@ -408,24 +408,24 @@
         <!-- Вторая колонка с сыллками -->
         <div class="second-container">
           <ul class="footer-list">
-            <li class="footer-list-item">
+            <li>
               <a class="footer-item-link" href="#">
                 Доставка
               </a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a class="footer-item-link" href="#">
                 Гарантия
               </a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a class="footer-item-link" href="#">
                 Контакты
               </a>
             </li>
           </ul>
           <ul class="social-list">
-            <li class="social-item">
+            <li>
               <a class="social-link" href="https://t.me/htmlacademy">
                 <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -437,7 +437,7 @@
                 </span>
               </a>
             </li>
-            <li class="social-item">
+            <li>
               <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
                 <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)">
@@ -456,7 +456,7 @@
                 </span>
               </a>
             </li>
-            <li class="social-item">
+            <li>
               <a class="social-link" href="https://twitter.com/htmlacademy_ru">
                 <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -497,7 +497,7 @@
               fill="#000" />
           </svg>
         </button>
-        <section class="modal-content">
+        <section>
           <h2 class="modal-title">Доставка под заказ</h2>
         </section>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
