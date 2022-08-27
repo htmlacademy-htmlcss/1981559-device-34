@@ -2716,6 +2716,11 @@ input[type=number] {
   padding: 25px;
 }
 
+.pagination-link-button:last-child {
+  padding-left: 28px;
+  padding-right: 21px;
+}
+
 .pagination-link-button:hover {
   background-color: #dcdcdc;
 }
