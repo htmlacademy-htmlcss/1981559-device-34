@@ -2146,7 +2146,7 @@ body {
 }
 
 .breadcrumbs-item::after {
-  background-image: url("/images/breadcrumbs-arrow.svg");
+  background-image: url("../images/breadcrumbs-arrow.svg");
   width: 4px;
   height: 7px;
   content: "";
