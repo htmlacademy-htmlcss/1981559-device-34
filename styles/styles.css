@@ -2379,7 +2379,7 @@ input[type=number] {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-image: url(/images/check-mark.svg);
+  background-image: url("../images/check-mark.svg");
   background-repeat: no-repeat;
   background-position: 3px 2px;
   content: "";
