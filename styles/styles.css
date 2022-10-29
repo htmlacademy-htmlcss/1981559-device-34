@@ -975,6 +975,15 @@ body {
   position: relative;
 }
 
+/* Белый декоративный отступ в преимуществах */
+.container-white-wrapper {
+  background-color: #ffffff;
+  height: 102px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .delivery-slider-container {
   width: 1160px;
   margin: 0 auto;
@@ -984,6 +993,25 @@ body {
 
 .delivery-input {
   display: none;
+}
+
+/* Декоративная полоска */
+.advantages-list::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 97%;
+  left: 280px;
+  top: 0;
+  background-color: #000000;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .slider-inner {
@@ -1004,6 +1032,8 @@ body {
   width: 872px;
 }
 
+/*Переключатели слайдера*/
+
 .delivery-input:nth-of-type(1):checked ~ .slider-inner .advantages-description-container {
   transform: translate(0);
 }
@@ -1014,35 +1044,6 @@ body {
 
 .delivery-input:nth-of-type(3):checked ~ .slider-inner .advantages-description-container {
   transform: translate(-1744px);
-}
-
-
-/* Белый декоративный отступ в преимуществах */
-.container-white-wrapper {
-  background-color: #ffffff;
-  height: 102px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-
-/* Декоративная полоска */
-.advantages-list::after {
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 97%;
-  left: 280px;
-  top: 0;
-  background-color: #000000;
-}
-
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  position: relative;
 }
 
 .advantages-item {
@@ -1083,44 +1084,40 @@ body {
   max-width: 480px;
 }
 
-.advantages-item button {
-  min-width: 160px;
-}
+/*.selected-advantages-button {*/
+/*  font-family: "Raleway", sans-serif;*/
+/*  font-weight: 800;*/
+/*  font-size: 18px;*/
+/*  line-height: 21px;*/
+/*  letter-spacing: 0.2em;*/
+/*  text-transform: uppercase;*/
+/*  color: #ffe17f;*/
+/*  border: none;*/
+/*  background-color: #000000;*/
+/*  width: 280px;*/
+/*  padding: 10px 18px;*/
+/*  text-align: start;*/
+/*  cursor: pointer;*/
+/*}*/
 
-.selected-advantages-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #ffe17f;
-  border: none;
-  background-color: #000000;
-  width: 280px;
-  padding: 10px 18px;
-  text-align: start;
-  cursor: pointer;
-}
+/*.selected-advantages-button.button-with-strip::before {*/
+/*  display: none;*/
+/*}*/
 
-.selected-advantages-button.button-with-strip::before {
-  display: none;
-}
+/*.selected-advantages-button.selected-advantages-button:hover {*/
+/*  color: rgba(255, 225, 127, 0.5);*/
+/*  background-color: #000000;*/
+/*}*/
 
-.selected-advantages-button.selected-advantages-button:hover {
-  color: rgba(255, 225, 127, 0.5);
-  background-color: #000000;
-}
+/*.selected-advantages-button:active.button-with-strip {*/
+/*  color: rgba(255, 225, 127, 0.3);*/
+/*}*/
 
-.selected-advantages-button:active.button-with-strip {
-  color: rgba(255, 225, 127, 0.3);
-}
-
-.selected-advantages-button:focus-visible.button-with-strip {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-  z-index: 1;
-}
+/*.selected-advantages-button:focus-visible.button-with-strip {*/
+/*  outline: 2px solid #af4fff;*/
+/*  outline-offset: 2px;*/
+/*  z-index: 1;*/
+/*}*/
 
 /* Блоки контейнера преимуществ */
 .delivery-block {
