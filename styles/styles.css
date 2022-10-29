@@ -109,7 +109,7 @@ body {
   background-color: #ffe17f;
 }
 
-/* Пользовальская верхняя часть страницы */
+/* Верхняя часть страницы пользователя */
 .user-container {
   display: flex;
   align-items: flex-start;
@@ -156,7 +156,7 @@ body {
 }
 
 /* Контейнер поиска */
-.serach-container {
+.search-container {
   display: flex;
 }
 
@@ -227,9 +227,7 @@ body {
 
 /* Контейнер кнопок пользователя */
 .user-buttons-container {
-  margin: 0;
-  margin-top: -4px;
-  margin-left: 26px;
+  margin: -4px 0 0 26px;
   flex-grow: 1;
   display: grid;
   grid-template-columns: auto 1fr 104px 113px;
@@ -246,8 +244,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   background-color: transparent;
-  padding: 0;
-  padding-top: 9px;
+  padding: 9px 0 0;
   border: none;
   display: flex;
   justify-content: flex-end;
@@ -774,8 +771,7 @@ body {
 }
 
 .description-title {
-  margin: 0;
-  margin-top: 106px;
+  margin: 106px 0 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -783,8 +779,7 @@ body {
 }
 
 .description-text {
-  margin: 0;
-  margin-top: 29px;
+  margin: 29px 0 0;
 }
 
 .button-and-points {
@@ -880,8 +875,7 @@ body {
 
 /* Характерстики товара в слайдере */
 .characteristics {
-  margin: 0;
-  margin-top: 48px;
+  margin: 48px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 21px;
@@ -976,8 +970,7 @@ body {
 }
 
 .category-link-title {
-  margin: 0;
-  margin-top: 33px;
+  margin: 33px 0 0;
 }
 
 /* Преимущества заказа */
@@ -1050,8 +1043,7 @@ body {
 }
 
 .advantages-description {
-  margin: 0;
-  margin-top: 33px;
+  margin: 33px 0 0;
   max-width: 480px;
 }
 
@@ -1094,7 +1086,7 @@ body {
   z-index: 1;
 }
 
-/* Возможно недочет дизайнера, испраляю проблему */
+/* Возможно недочет дизайнера, исправляю проблему */
 
 /* .button-with-strip.selected-advantages-button {
   padding: 10px 35px;
@@ -1102,8 +1094,7 @@ body {
 
 .advantages-description-container {
   list-style-type: none;
-  margin: 0;
-  margin-left: 123px;
+  margin: 0 0 0 123px;
   padding: 0;
   flex-grow: 1;
   z-index: 1;
@@ -1211,8 +1202,7 @@ body {
 /* Блок с информацией о нас и контактами */
 .contacts-container {
   list-style-type: none;
-  margin: 0;
-  margin-top: 67px;
+  margin: 67px 0 0;
   padding: 0;
   display: flex;
   gap: 113px;
@@ -1238,14 +1228,11 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  margin: 0;
-  margin-top: 47px;
-  margin-bottom: 48px;
+  margin: 47px 0 48px;
 }
 
 .contact-text {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .delivery-companies {
@@ -1291,8 +1278,7 @@ body {
 .contacts-address-text {
   font-style: normal;
   color: #444444;
-  margin: 0;
-  margin-top: 15px;
+  margin: 15px 0 0;
 }
 
 .contact-number {
@@ -1324,7 +1310,7 @@ body {
   color: #444444;
 }
 
-/* разный отсуп вынудил меня сделать это */
+/* разный отступ вынудил меня сделать это */
 .contact-button-strange {
   color: #000000;
   text-decoration: none;
@@ -1339,8 +1325,7 @@ body {
 }
 
 .subscribe-block {
-  margin: 0 auto;
-  margin-top: 74px;
+  margin: 74px auto 0;
   width: 1160px;
   padding-top: 64px;
   padding-bottom: 56px;
@@ -1359,8 +1344,7 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  margin: 0;
-  margin-left: 8px;
+  margin: 0 0 0 8px;
   grid-area: title;
 }
 
@@ -1368,9 +1352,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  margin: 0;
-  margin-top: 10px;
-  margin-right: 25px;
+  margin: 10px 25px 0 0;
   max-width: 528px;
   grid-area: text;
   justify-self: end;
@@ -1468,8 +1450,7 @@ body {
   padding-left: 32px;
   grid-area: free;
   align-self: start;
-  margin: 0;
-  margin-top: 13px;
+  margin: 13px 0 0;
 }
 
 /* Футер */
@@ -1537,8 +1518,7 @@ body {
 }
 
 .footer-list {
-  margin: 0;
-  margin-bottom: 57px;
+  margin: 0 0 57px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -1739,8 +1719,7 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 0 35px;
 }
 
 /* Сетка содержимого модального окна */
@@ -1795,8 +1774,7 @@ body {
 .input-support {
   grid-column: 1/2;
   grid-row: 3/4;
-  margin: 0;
-  margin-bottom: 42px;
+  margin: 0 0 42px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1821,8 +1799,7 @@ body {
 .e-mail-error {
   grid-column: 2/-1;
   grid-row: 3/4;
-  margin: 0;
-  margin-bottom: 11px;
+  margin: 0 0 11px;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
@@ -2094,9 +2071,7 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  margin: 0;
-  margin-top: 35px;
-  margin-left: 60px;
+  margin: 35px 0 0 60px;
 }
 
 /* Центровка внутреннего хедера */
@@ -2107,10 +2082,7 @@ body {
 
 /* Хлебные крошки */
 .breadcrumbs {
-  margin: 0;
-  margin-top: 10px;
-  margin-left: 58px;
-  margin-bottom: 30px;
+  margin: 10px 0 30px 58px;
   padding: 0;
   display: flex;
   list-style-type: none;
@@ -2185,8 +2157,7 @@ body {
 
 /* Фильтр каталога */
 .catalog-filter {
-  padding: 60px;
-  padding-top: 25px;
+  padding: 25px 60px 60px;
   box-sizing: border-box;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -2309,8 +2280,7 @@ input[type=number] {
 }
 
 .cost {
-  margin: 0;
-  margin-top: 72px;
+  margin: 72px 0 0;
   padding: 0;
   width: 200px;
   border: none;
@@ -2321,15 +2291,13 @@ input[type=number] {
 /* Контейнер чекбоксов выбора цвета */
 .color-checkbox {
   border: none;
-  margin: 0;
-  margin-top: 42px;
+  margin: 42px 0 0;
   padding: 0;
 }
 
 .color-checkbox-container {
   list-style-type: none;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0;
   padding: 0;
 }
 
@@ -2396,16 +2364,14 @@ input[type=number] {
 
 /* Контейнер наличия Bluetooth */
 .bluetooth-radio {
-  margin: 0;
   padding: 0;
-  margin-top: 29px;
+  margin: 29px 0 0;
   border: none;
 }
 
 .bluetooth-list {
   list-style-type: none;
-  margin: 0;
-  margin-top: 21px;
+  margin: 21px 0 0;
   padding: 0;
 }
 
@@ -2599,8 +2565,7 @@ input[type=number] {
 }
 
 .product-title {
-  margin: 0;
-  margin-top: 33px;
+  margin: 33px 0 0;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
