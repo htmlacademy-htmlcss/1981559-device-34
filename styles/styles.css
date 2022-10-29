@@ -78,13 +78,6 @@ body {
   background-color: #ffffff;
 }
 
-.delivery-slider-container {
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-}
-
 /* Лого */
 .navigation-logo {
   position: absolute;
@@ -982,6 +975,48 @@ body {
   position: relative;
 }
 
+.delivery-slider-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.delivery-input {
+  display: none;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.advantages-description-container {
+  list-style-type: none;
+  margin: 0 0 0 123px;
+  padding: 0;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+
+.advantages-description-container li {
+  float: left;
+  width: 872px;
+}
+
+.delivery-input:nth-of-type(1):checked ~ .slider-inner .advantages-description-container {
+  transform: translate(0);
+}
+
+.delivery-input:nth-of-type(2):checked ~ .slider-inner .advantages-description-container {
+  transform: translate(-872px);
+}
+
+.delivery-input:nth-of-type(3):checked ~ .slider-inner .advantages-description-container {
+  transform: translate(-1744px);
+}
+
+
 /* Белый декоративный отступ в преимуществах */
 .container-white-wrapper {
   background-color: #ffffff;
@@ -1087,48 +1122,23 @@ body {
   z-index: 1;
 }
 
-/* Возможно недочет дизайнера, исправляю проблему */
-
-/* .button-with-strip.selected-advantages-button {
-  padding: 10px 35px;
-} */
-
-.advantages-description-container {
-  list-style-type: none;
-  margin: 0 0 0 123px;
-  padding: 0;
-  flex-grow: 1;
-  z-index: 1;
-}
-
-.advantages-description-container li {
-  min-height: 260px;
-}
-
 /* Блоки контейнера преимуществ */
 .delivery-block {
   background-image: url("../images/advantages/deliveryman.svg");
   background-repeat: no-repeat;
   background-position: 90% 77px;
-  display: none;
 }
 
 .guarantee-block {
   background-image: url("../images/advantages/guarantee.svg");
   background-repeat: no-repeat;
   background-position: 558px 62px;
-  display: none;
 }
 
 .credit-block {
   background-image: url("../images/advantages/credit.svg");
   background-repeat: no-repeat;
   background-position: 573px 65px;
-  display: none;
-}
-
-.selected-block {
-  display: block;
 }
 
 /* Блок заказа доставки */
