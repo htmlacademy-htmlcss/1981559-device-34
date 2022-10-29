@@ -1006,7 +1006,7 @@ body {
   align-items: start;
 }
 
-/* Декоративная полоска */
+/* Декоративная черная полоска правее списка кнопок*/
 .advantages-list::after {
   content: "";
   position: absolute;
@@ -1049,7 +1049,6 @@ body {
 }
 
 /*Стилизация кнопок в преимуществах*/
-
 .advantages-button {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -1061,8 +1060,8 @@ body {
   text-align: center;
   height: 40px;
   min-width: 160px;
-  margin-top: 34px;
-  padding-top: 9px;
+  margin-top: 36px;
+  padding: 10px 5px 0 9px;
   box-sizing: border-box;
   list-style-type: none;
   position: relative;
@@ -1081,7 +1080,6 @@ body {
   z-index: -1;
 }
 
-
 .advantages-button:first-of-type {
   margin-top: 64px;
 }
@@ -1090,15 +1088,44 @@ body {
   margin-bottom: 75px;
 }
 
-/* Исправляю возможную ошибку дизайнера */
-.advantages-button:nth-child(3) .selected-advantages-button {
-  padding: 10px 34px;
+/*Выбранная кнопка*/
+.delivery-input:nth-of-type(1):checked ~ .advantages-list .advantages-button:nth-of-type(1) {
+  color: #ffe17f;
+  background-color: #000000;
+  width: 280px;
+  text-align: start;
+  padding-left: 18px;
+}
+
+.delivery-input:nth-of-type(2):checked ~ .advantages-list .advantages-button:nth-of-type(2) {
+  color: #ffe17f;
+  background-color: #000000;
+  width: 280px;
+  text-align: start;
+  padding-left: 18px;
+}
+
+.delivery-input:nth-of-type(3):checked ~ .advantages-list .advantages-button:nth-of-type(3) {
+  color: #ffe17f;
+  background-color: #000000;
+  width: 280px;
+  text-align: start;
+  padding-left: 18px;
+}
+
+.delivery-input:nth-of-type(1):checked ~ .advantages-list .advantages-button:nth-of-type(1)::before {
+  display: none;
+}
+
+.delivery-input:nth-of-type(2):checked ~ .advantages-list .advantages-button:nth-of-type(2)::before {
+  display: none;
+}
+
+.delivery-input:nth-of-type(3):checked ~ .advantages-list .advantages-button:nth-of-type(3)::before {
+  display: none;
 }
 
 /*.selected-advantages-button {*/
-/*  color: #ffe17f;*/
-/*  border: none;*/
-/*  background-color: #000000;*/
 /*  width: 280px;*/
 /*  padding: 10px 18px;*/
 /*  text-align: start;*/
