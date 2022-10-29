@@ -366,17 +366,20 @@
         <div class="container-white-wrapper"></div>
         <div class="delivery-slider-container">
           <h2 class="visually-hidden">Преимущества заказа у нас</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <button class="button-with-strip selected-advantages-button" type="button">Доставка</button>
-            </li>
-            <li class="advantages-item">
-              <button class="button-with-strip" type="button">Гарантия</button>
-            </li>
-            <li class="advantages-item">
-              <button class="button-with-strip" type="button">Кредит</button>
-            </li>
-          </ul>
+          <input class="delivery-radio-input" type="radio" id="delivery-number-1" name="delivery-toggle" checked>
+          <input class="delivery-radio-input" type="radio" id="delivery-number-2" name="delivery-toggle">
+          <input class="delivery-radio-input" type="radio" id="delivery-number-3" name="delivery-toggle">
+          <div class="advantages-list">
+            <label class="advantages-item" for="delivery-number-1">
+              <span class="button-with-strip selected-advantages-button">Доставка</span>
+            </label>
+            <label class="advantages-item" for="delivery-number-2">
+              <span class="button-with-strip">Гарантия</span>
+            </label>
+            <label class="advantages-item" for="delivery-number-3">
+              <span class="button-with-strip">Кредит</span>
+            </label>
+          </div>
           <ul class="advantages-description-container">
             <li class="delivery-block selected-block">
               <p class="advantages-title">Доставка</p>
