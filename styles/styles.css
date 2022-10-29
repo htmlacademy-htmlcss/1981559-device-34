@@ -1031,7 +1031,9 @@ body {
 
 .advantages-description-container li {
   float: left;
-  width: 872px;
+  width: 756px;
+  margin-left: 116px;
+  min-height: 238px;
 }
 
 /*Переключатели слайдера*/
@@ -1157,12 +1159,12 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  padding-top: 73px;
+  padding-top: 55px;
   max-width: 450px;
 }
 
 .advantages-description {
-  margin: 33px 0 0;
+  margin: 35px 0 0;
   max-width: 480px;
 }
 
@@ -1170,19 +1172,19 @@ body {
 .delivery-block {
   background-image: url("../images/advantages/deliveryman.svg");
   background-repeat: no-repeat;
-  background-position: 90% 77px;
+  background-position: 90% 59px;
 }
 
 .guarantee-block {
   background-image: url("../images/advantages/guarantee.svg");
   background-repeat: no-repeat;
-  background-position: 558px 62px;
+  background-position: 557px 44px;
 }
 
 .credit-block {
   background-image: url("../images/advantages/credit.svg");
   background-repeat: no-repeat;
-  background-position: 573px 65px;
+  background-position: 573px 47px;
 }
 
 /* Блок заказа доставки */
